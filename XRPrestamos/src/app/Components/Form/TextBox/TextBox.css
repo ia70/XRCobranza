@@ -1,0 +1,10 @@
+/*input:valid, textarea:valid {
+    color: black;
+    background: rgb(233, 255, 233);
+}
+
+input:invalid, textarea:invalid {
+    color: white;
+    background: rgb(253, 110, 110);
+}*/
+

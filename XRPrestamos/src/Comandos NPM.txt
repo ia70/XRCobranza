@@ -1,0 +1,10 @@
+Script del Package:
+    npm start
+    npm run dev
+    npm run build
+
+Instalar todos los modulos:
+    npm i
+
+Instalar modulo Desarrollo
+    npm i modulo -D

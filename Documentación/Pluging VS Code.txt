@@ -1,0 +1,12 @@
+EXTENSIONES VS CODE
+
+- Auto Close Tag -
+- Auto Rename Tag -
+- Bracket Pair Colorizer 2
+- Material Icon Theme -
+----- Node Snippets
+- npm
+- npm Intellisense
+- Path Autocomplete
+- Spanish Language Pack
+

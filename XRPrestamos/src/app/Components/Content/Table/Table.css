@@ -1,0 +1,10 @@
+.title {
+    display: flex;
+    background-color: cornflowerblue;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    color: white;
+    justify-content: center;
+}

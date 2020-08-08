@@ -1,0 +1,44 @@
+.navbarextends {
+    color: white;
+}
+
+.navbarextends_flex {
+    display: flex;
+}
+
+.test-flex {
+    background-color: thistle;
+}
+
+.navbarextends_label1 {
+    color: rgb(221, 226, 255);
+}
+
+.navbarextends_label2 {
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    color: rgb(0, 89, 255);
+    background-color:rgb(230, 248, 255);
+}
+
+.navbarextends_fecha {
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    color: rgb(0, 119, 255);
+    background-color:rgb(230, 248, 255);
+}
+
+.meta_mal{
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 0, 0);
+}
+
+.meta_regular{
+    color: rgb(0, 0, 0);
+    background-color:rgb(243, 186, 0);
+}
+
+.meta_bien{
+    color: rgb(255, 255, 255);
+    background-color:rgb(0, 172, 9);
+}

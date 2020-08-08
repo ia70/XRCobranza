@@ -1,0 +1,17 @@
+.btn{
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.imagen{
+    background-image: url("../../../img/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 50px;
+}

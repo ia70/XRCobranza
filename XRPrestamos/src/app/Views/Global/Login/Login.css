@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    height: 100%;
+
+    background-image: url("../../../img/fondo3.jpg");
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+}
+
+#root {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contenedor {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    background-image: url("../../../img/fondo1.jpg");
+    /* Para dejar la imagen de fondo centrada, vertical y
+    horizontalmente */
+    background-position: center center;
+    /* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+}
+
+.login {
+    background-color: rgba(159, 202, 243, 0.507);
+    width: 20em;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_title {
+    background-color: burlywood;
+}
+
+.login_body {
+    background-color: rgb(218, 233, 255);
+}

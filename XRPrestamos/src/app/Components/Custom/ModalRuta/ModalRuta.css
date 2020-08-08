@@ -1,0 +1,48 @@
+.modalruta {
+    display: flex;
+    border-radius: 0.7em;
+}
+
+.tm1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tm2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.redondear{
+    border-radius: 0.7em;
+}
+
+.modalruta_alias{
+    border-top-left-radius: 0.7em;
+    border-top-right-radius: 0.7em;
+    background-color: rgb(196, 233, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalruta_name{
+    background-color: rgb(91, 143, 192);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.modalruta_body{
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalruta_monto{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: rgb(255, 230, 0);
+    justify-content: center;
+    align-items: center;
+}

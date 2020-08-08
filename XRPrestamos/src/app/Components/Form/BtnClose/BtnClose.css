@@ -1,0 +1,8 @@
+.btnclose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(201, 61, 61);
+}
