@@ -5991,8 +5991,8 @@
                 ],
                 "onDelete": "",
                 "onUpdate": "",
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "NoneRelationship",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "ZeroOrManyRelationship",
                 "oldName": ""
               }
             ],
@@ -7936,8 +7936,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "configuracion",
-          "x": 50,
-          "y": 1770,
+          "x": 100,
+          "y": 1870,
           "width": 200,
           "height": 200,
           "isBold": false,
@@ -8033,7 +8033,7 @@
           "schemaName": "xrprestamos",
           "tableName": "estado",
           "x": 110,
-          "y": 600,
+          "y": 580,
           "width": 200,
           "height": 90,
           "isBold": false,
@@ -8049,7 +8049,7 @@
           "schemaName": "xrprestamos",
           "tableName": "estado_credito",
           "x": 340,
-          "y": 490,
+          "y": 460,
           "width": 200,
           "height": 90,
           "isBold": false,
@@ -8065,7 +8065,7 @@
           "schemaName": "xrprestamos",
           "tableName": "ruta",
           "x": 95,
-          "y": 802,
+          "y": 772,
           "width": 200,
           "height": 120,
           "isBold": false,
@@ -8080,8 +8080,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "tipo_inmueble",
-          "x": 60,
-          "y": 1540,
+          "x": 90,
+          "y": 1470,
           "width": 200,
           "height": 80,
           "isBold": false,
@@ -8096,8 +8096,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "tipo_cobro",
-          "x": 60,
-          "y": 1270,
+          "x": 90,
+          "y": 1220,
           "width": 200,
           "height": 100,
           "isBold": false,
@@ -8112,8 +8112,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "tipo_pago",
-          "x": 320,
-          "y": 1540,
+          "x": 350,
+          "y": 1460,
           "width": 200,
           "height": 80,
           "isBold": false,
@@ -8128,8 +8128,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "tipo_credito",
-          "x": 320,
-          "y": 1280,
+          "x": 350,
+          "y": 1220,
           "width": 200,
           "height": 80,
           "isBold": false,
@@ -8144,8 +8144,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "tipo_capital",
-          "x": 320,
-          "y": 1410,
+          "x": 350,
+          "y": 1320,
           "width": 200,
           "height": 90,
           "isBold": false,
@@ -8160,8 +8160,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "tipo_concepto",
-          "x": 60,
-          "y": 1410,
+          "x": 90,
+          "y": 1340,
           "width": 200,
           "height": 100,
           "isBold": false,
@@ -8176,8 +8176,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "estado_solicitud",
-          "x": 90,
-          "y": 480,
+          "x": 130,
+          "y": 460,
           "width": 200,
           "height": 80,
           "isBold": false,
@@ -8192,8 +8192,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "zona_horaria",
-          "x": 300,
-          "y": 1780,
+          "x": 350,
+          "y": 1880,
           "width": 200,
           "height": 120,
           "isBold": false,
@@ -8208,8 +8208,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "moneda",
-          "x": 340,
-          "y": 1940,
+          "x": 390,
+          "y": 2040,
           "width": 200,
           "height": 100,
           "isBold": false,
@@ -8240,7 +8240,7 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "media",
-          "x": 900,
+          "x": 890,
           "y": 107,
           "width": 200,
           "height": 210,
@@ -8256,8 +8256,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "tipo_media",
-          "x": 60,
-          "y": 1150,
+          "x": 90,
+          "y": 1120,
           "width": 200,
           "height": 80,
           "isBold": false,
@@ -8272,7 +8272,7 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "aval",
-          "x": 900,
+          "x": 890,
           "y": 360,
           "width": 200,
           "height": 220,
@@ -8288,8 +8288,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "tipo_parentesco",
-          "x": 320,
-          "y": 1150,
+          "x": 350,
+          "y": 1120,
           "width": 200,
           "height": 90,
           "isBold": false,
@@ -8320,8 +8320,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "sesion",
-          "x": 50,
-          "y": 2000,
+          "x": 100,
+          "y": 2100,
           "width": 200,
           "height": 160,
           "isBold": false,
@@ -8336,8 +8336,8 @@
           "type": "table",
           "schemaName": "xrprestamos",
           "tableName": "solicitud",
-          "x": 360,
-          "y": 790,
+          "x": 340,
+          "y": 770,
           "width": 200,
           "height": 270,
           "isBold": false,
@@ -8353,7 +8353,7 @@
           "schemaName": "xrprestamos",
           "tableName": "abono",
           "x": 655,
-          "y": 2207,
+          "y": 2307,
           "width": 200,
           "height": 200,
           "isBold": false,
@@ -8369,7 +8369,7 @@
           "schemaName": "xrprestamos",
           "tableName": "credito",
           "x": 640,
-          "y": 1780,
+          "y": 1880,
           "width": 215,
           "height": 340,
           "isBold": false,
@@ -8385,7 +8385,7 @@
           "schemaName": "xrprestamos",
           "tableName": "capital",
           "x": 890,
-          "y": 1950,
+          "y": 2050,
           "width": 200,
           "height": 330,
           "isBold": false,
@@ -8402,7 +8402,7 @@
           "name": "EMPRESA",
           "x": 620,
           "y": 730,
-          "width": 500,
+          "width": 490,
           "height": 540,
           "layerColor": {
             "r": 100,
@@ -8445,7 +8445,7 @@
           "x": 70,
           "y": 420,
           "width": 500,
-          "height": 310,
+          "height": 290,
           "layerColor": {
             "r": 255,
             "g": 255,
@@ -8464,7 +8464,7 @@
         {
           "name": "RUTAS",
           "x": 70,
-          "y": 750,
+          "y": 720,
           "width": 245,
           "height": 192,
           "layerColor": {
@@ -8484,10 +8484,10 @@
         },
         {
           "name": "TIPOS",
-          "x": 20,
-          "y": 1100,
-          "width": 560,
-          "height": 540,
+          "x": 70,
+          "y": 1070,
+          "width": 540,
+          "height": 510,
           "layerColor": {
             "r": 255,
             "g": 214,
@@ -8505,9 +8505,9 @@
         },
         {
           "name": "CONFIGURACION",
-          "x": 20,
-          "y": 1720,
-          "width": 560,
+          "x": 70,
+          "y": 1820,
+          "width": 530,
           "height": 470,
           "layerColor": {
             "r": 0,
@@ -8528,7 +8528,7 @@
           "name": "PERSONA",
           "x": 610,
           "y": 40,
-          "width": 515,
+          "width": 500,
           "height": 677,
           "layerColor": {
             "r": 255,
@@ -8547,8 +8547,8 @@
         },
         {
           "name": "PROCESOS",
-          "x": 340,
-          "y": 740,
+          "x": 320,
+          "y": 720,
           "width": 245,
           "height": 340,
           "layerColor": {
@@ -8569,8 +8569,8 @@
         {
           "name": "FINANZAS",
           "x": 620,
-          "y": 1720,
-          "width": 500,
+          "y": 1820,
+          "width": 490,
           "height": 707,
           "layerColor": {
             "r": 255,
@@ -8597,24 +8597,20 @@
           "visible": true,
           "vertices": [
             {
-              "x": 970,
+              "x": 1010,
               "y": 1027
             },
             {
-              "x": 970,
-              "y": 1660
+              "x": 1010,
+              "y": 1890
             },
             {
-              "x": 650,
-              "y": 1660
-            },
-            {
-              "x": 265,
-              "y": 1785
+              "x": 315,
+              "y": 1890
             }
           ],
           "label": {
-            "x": 972,
+            "x": 1012,
             "y": 977,
             "width": 79,
             "height": 30,
@@ -8647,11 +8643,11 @@
               "y": 1050
             },
             {
-              "x": 1000,
+              "x": 960,
               "y": 1050
             },
             {
-              "x": 1000,
+              "x": 960,
               "y": 1027
             }
           ],
@@ -8829,17 +8825,17 @@
           "visible": true,
           "vertices": [
             {
-              "x": 230,
-              "y": 1755
+              "x": 280,
+              "y": 1855
             },
             {
               "x": 190,
-              "y": 705
+              "y": 685
             }
           ],
           "label": {
-            "x": 232,
-            "y": 1725,
+            "x": 282,
+            "y": 1825,
             "width": 63,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -8872,11 +8868,11 @@
             },
             {
               "x": 590,
-              "y": 670
+              "y": 650
             },
             {
               "x": 325,
-              "y": 670
+              "y": 650
             }
           ],
           "label": {
@@ -8910,11 +8906,11 @@
             },
             {
               "x": 980,
-              "y": 640
+              "y": 620
             },
             {
               "x": 325,
-              "y": 640
+              "y": 620
             }
           ],
           "label": {
@@ -8948,11 +8944,11 @@
             },
             {
               "x": 325,
-              "y": 530
+              "y": 600
             },
             {
               "x": 325,
-              "y": 615
+              "y": 600
             }
           ],
           "label": {
@@ -8981,20 +8977,16 @@
           "visible": true,
           "vertices": [
             {
-              "x": 105,
+              "x": 120,
               "y": 405
             },
             {
-              "x": 105,
-              "y": 620
-            },
-            {
-              "x": 95,
-              "y": 620
+              "x": 130,
+              "y": 565
             }
           ],
           "label": {
-            "x": 39,
+            "x": 54,
             "y": 355,
             "width": 68,
             "height": 30,
@@ -9020,15 +9012,7 @@
           "vertices": [
             {
               "x": 310,
-              "y": 860
-            },
-            {
-              "x": 607,
-              "y": 860
-            },
-            {
-              "x": 607,
-              "y": 860
+              "y": 830
             },
             {
               "x": 635,
@@ -9037,7 +9021,7 @@
           ],
           "label": {
             "x": 300,
-            "y": 822,
+            "y": 792,
             "width": 72,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9062,16 +9046,16 @@
           "vertices": [
             {
               "x": 150,
-              "y": 787
+              "y": 757
             },
             {
               "x": 150,
-              "y": 705
+              "y": 685
             }
           ],
           "label": {
             "x": 152,
-            "y": 757,
+            "y": 727,
             "width": 60,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9095,25 +9079,17 @@
           "visible": true,
           "vertices": [
             {
-              "x": 275,
-              "y": 1460
-            },
-            {
-              "x": 270,
-              "y": 1460
-            },
-            {
-              "x": 270,
-              "y": 1460
-            },
-            {
               "x": 305,
-              "y": 1460
+              "y": 1390
+            },
+            {
+              "x": 335,
+              "y": 1370
             }
           ],
           "label": {
-            "x": 271,
-            "y": 1432,
+            "x": 301,
+            "y": 1362,
             "width": 118,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9137,17 +9113,17 @@
           "visible": true,
           "vertices": [
             {
-              "x": 885,
-              "y": 302
+              "x": 875,
+              "y": 300
             },
             {
-              "x": 180,
-              "y": 1135
+              "x": 210,
+              "y": 1105
             }
           ],
           "label": {
-            "x": 895,
-            "y": 264,
+            "x": 885,
+            "y": 262,
             "width": 110,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9171,7 +9147,7 @@
           "visible": true,
           "vertices": [
             {
-              "x": 885,
+              "x": 875,
               "y": 300
             },
             {
@@ -9180,11 +9156,11 @@
             },
             {
               "x": 290,
-              "y": 585
+              "y": 565
             }
           ],
           "label": {
-            "x": 895,
+            "x": 885,
             "y": 262,
             "width": 75,
             "height": 30,
@@ -9213,12 +9189,12 @@
               "y": 390
             },
             {
-              "x": 110,
+              "x": 140,
               "y": 390
             },
             {
-              "x": 110,
-              "y": 1525
+              "x": 140,
+              "y": 1455
             }
           ],
           "label": {
@@ -9256,7 +9232,7 @@
             },
             {
               "x": 240,
-              "y": 787
+              "y": 757
             }
           ],
           "label": {
@@ -9294,7 +9270,7 @@
             },
             {
               "x": 290,
-              "y": 585
+              "y": 565
             }
           ],
           "label": {
@@ -9324,7 +9300,7 @@
           "vertices": [
             {
               "x": 1000,
-              "y": 1935
+              "y": 2035
             },
             {
               "x": 830,
@@ -9333,7 +9309,7 @@
           ],
           "label": {
             "x": 1002,
-            "y": 1905,
+            "y": 2005,
             "width": 73,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9358,16 +9334,16 @@
           "vertices": [
             {
               "x": 980,
-              "y": 1935
+              "y": 2035
             },
             {
-              "x": 760,
+              "x": 780,
               "y": 1265
             }
           ],
           "label": {
             "x": 982,
-            "y": 1905,
+            "y": 2005,
             "width": 68,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9392,7 +9368,7 @@
           "vertices": [
             {
               "x": 1020,
-              "y": 1935
+              "y": 2035
             },
             {
               "x": 820,
@@ -9401,7 +9377,7 @@
           ],
           "label": {
             "x": 1022,
-            "y": 1905,
+            "y": 2005,
             "width": 66,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9426,16 +9402,16 @@
           "vertices": [
             {
               "x": 875,
-              "y": 2000
+              "y": 2100
             },
             {
-              "x": 535,
-              "y": 1450
+              "x": 565,
+              "y": 1360
             }
           ],
           "label": {
             "x": 885,
-            "y": 1962,
+            "y": 2062,
             "width": 71,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9460,16 +9436,16 @@
           "vertices": [
             {
               "x": 875,
-              "y": 2070
+              "y": 2170
             },
             {
-              "x": 275,
-              "y": 1490
+              "x": 305,
+              "y": 1420
             }
           ],
           "label": {
             "x": 885,
-            "y": 2032,
+            "y": 2132,
             "width": 72,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9494,7 +9470,7 @@
           "vertices": [
             {
               "x": 840,
-              "y": 1765
+              "y": 1865
             },
             {
               "x": 780,
@@ -9503,7 +9479,7 @@
           ],
           "label": {
             "x": 842,
-            "y": 1735,
+            "y": 1835,
             "width": 67,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9528,7 +9504,7 @@
           "vertices": [
             {
               "x": 840,
-              "y": 1765
+              "y": 1865
             },
             {
               "x": 840,
@@ -9541,7 +9517,7 @@
           ],
           "label": {
             "x": 842,
-            "y": 1735,
+            "y": 1835,
             "width": 64,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9565,21 +9541,21 @@
           "visible": true,
           "vertices": [
             {
-              "x": 655,
-              "y": 1765
+              "x": 660,
+              "y": 1865
             },
             {
-              "x": 300,
-              "y": 1710
+              "x": 660,
+              "y": 1300
             },
             {
-              "x": 275,
-              "y": 1355
+              "x": 305,
+              "y": 1300
             }
           ],
           "label": {
-            "x": 657,
-            "y": 1735,
+            "x": 662,
+            "y": 1835,
             "width": 73,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9604,20 +9580,20 @@
           "vertices": [
             {
               "x": 875,
-              "y": 2130
+              "y": 2230
             },
             {
               "x": 280,
-              "y": 2130
+              "y": 2230
             },
             {
               "x": 280,
-              "y": 705
+              "y": 685
             }
           ],
           "label": {
             "x": 885,
-            "y": 2092,
+            "y": 2192,
             "width": 61,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9642,20 +9618,20 @@
           "vertices": [
             {
               "x": 1050,
-              "y": 1935
+              "y": 2035
             },
             {
-              "x": 1050,
+              "x": 1070,
               "y": 1910
             },
             {
-              "x": 1080,
+              "x": 1070,
               "y": 332
             }
           ],
           "label": {
             "x": 1052,
-            "y": 1905,
+            "y": 2005,
             "width": 72,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9680,16 +9656,16 @@
           "vertices": [
             {
               "x": 625,
-              "y": 2040
+              "y": 2140
             },
             {
               "x": 555,
-              "y": 560
+              "y": 530
             }
           ],
           "label": {
             "x": 635,
-            "y": 2002,
+            "y": 2102,
             "width": 82,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9714,20 +9690,20 @@
           "vertices": [
             {
               "x": 625,
-              "y": 1795
+              "y": 1900
             },
             {
               "x": 220,
-              "y": 1740
+              "y": 1900
             },
             {
               "x": 220,
-              "y": 705
+              "y": 685
             }
           ],
           "label": {
             "x": 635,
-            "y": 1757,
+            "y": 1862,
             "width": 62,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9752,16 +9728,16 @@
           "vertices": [
             {
               "x": 700,
-              "y": 1765
+              "y": 1865
             },
             {
-              "x": 535,
-              "y": 1320
+              "x": 565,
+              "y": 1260
             }
           ],
           "label": {
             "x": 702,
-            "y": 1735,
+            "y": 1835,
             "width": 68,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9786,16 +9762,16 @@
           "vertices": [
             {
               "x": 770,
-              "y": 2192
+              "y": 2292
             },
             {
               "x": 770,
-              "y": 2135
+              "y": 2235
             }
           ],
           "label": {
             "x": 701,
-            "y": 2162,
+            "y": 2262,
             "width": 71,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9820,16 +9796,16 @@
           "vertices": [
             {
               "x": 710,
-              "y": 2192
+              "y": 2292
             },
             {
-              "x": 535,
-              "y": 1580
+              "x": 565,
+              "y": 1500
             }
           ],
           "label": {
             "x": 712,
-            "y": 2162,
+            "y": 2262,
             "width": 80,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9854,16 +9830,16 @@
           "vertices": [
             {
               "x": 640,
-              "y": 2390
+              "y": 2490
             },
             {
               "x": 250,
-              "y": 705
+              "y": 685
             }
           ],
           "label": {
             "x": 650,
-            "y": 2352,
+            "y": 2452,
             "width": 68,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9887,8 +9863,8 @@
           "visible": true,
           "vertices": [
             {
-              "x": 575,
-              "y": 970
+              "x": 555,
+              "y": 950
             },
             {
               "x": 635,
@@ -9896,8 +9872,8 @@
             }
           ],
           "label": {
-            "x": 565,
-            "y": 932,
+            "x": 545,
+            "y": 912,
             "width": 59,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9921,8 +9897,8 @@
           "visible": true,
           "vertices": [
             {
-              "x": 575,
-              "y": 830
+              "x": 555,
+              "y": 810
             },
             {
               "x": 700,
@@ -9930,8 +9906,8 @@
             }
           ],
           "label": {
-            "x": 565,
-            "y": 792,
+            "x": 545,
+            "y": 772,
             "width": 61,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9955,16 +9931,8 @@
           "visible": true,
           "vertices": [
             {
-              "x": 575,
-              "y": 805
-            },
-            {
-              "x": 590,
-              "y": 710
-            },
-            {
-              "x": 590,
-              "y": 460
+              "x": 555,
+              "y": 790
             },
             {
               "x": 615,
@@ -9972,8 +9940,8 @@
             }
           ],
           "label": {
-            "x": 565,
-            "y": 767,
+            "x": 545,
+            "y": 752,
             "width": 58,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9997,17 +9965,17 @@
           "visible": true,
           "vertices": [
             {
-              "x": 380,
-              "y": 1075
+              "x": 360,
+              "y": 1055
             },
             {
-              "x": 275,
-              "y": 1290
+              "x": 305,
+              "y": 1240
             }
           ],
           "label": {
-            "x": 382,
-            "y": 1025,
+            "x": 362,
+            "y": 1005,
             "width": 67,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10031,21 +9999,21 @@
           "visible": true,
           "vertices": [
             {
-              "x": 460,
-              "y": 775
+              "x": 440,
+              "y": 755
             },
             {
-              "x": 460,
+              "x": 240,
               "y": 630
             },
             {
-              "x": 200,
-              "y": 575
+              "x": 240,
+              "y": 555
             }
           ],
           "label": {
-            "x": 462,
-            "y": 745,
+            "x": 442,
+            "y": 725,
             "width": 75,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10069,17 +10037,17 @@
           "visible": true,
           "vertices": [
             {
-              "x": 410,
-              "y": 775
+              "x": 390,
+              "y": 755
             },
             {
               "x": 290,
-              "y": 705
+              "y": 685
             }
           ],
           "label": {
-            "x": 412,
-            "y": 745,
+            "x": 392,
+            "y": 725,
             "width": 56,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10138,24 +10106,16 @@
           "vertices": [
             {
               "x": 865,
-              "y": 290
+              "y": 230
             },
             {
               "x": 875,
-              "y": 290
-            },
-            {
-              "x": 875,
-              "y": 130
-            },
-            {
-              "x": 885,
-              "y": 130
+              "y": 200
             }
           ],
           "label": {
             "x": 855,
-            "y": 252,
+            "y": 192,
             "width": 76,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10179,7 +10139,7 @@
           "visible": true,
           "vertices": [
             {
-              "x": 885,
+              "x": 875,
               "y": 410
             },
             {
@@ -10188,7 +10148,7 @@
             }
           ],
           "label": {
-            "x": 833,
+            "x": 823,
             "y": 372,
             "width": 62,
             "height": 30,
@@ -10213,20 +10173,20 @@
           "visible": true,
           "vertices": [
             {
-              "x": 885,
+              "x": 875,
               "y": 480
             },
             {
-              "x": 420,
+              "x": 450,
               "y": 480
             },
             {
-              "x": 420,
-              "y": 1135
+              "x": 450,
+              "y": 1105
             }
           ],
           "label": {
-            "x": 810,
+            "x": 800,
             "y": 442,
             "width": 85,
             "height": 30,
@@ -10251,16 +10211,16 @@
           "visible": true,
           "vertices": [
             {
-              "x": 750,
+              "x": 730,
               "y": 715
             },
             {
-              "x": 750,
+              "x": 730,
               "y": 775
             }
           ],
           "label": {
-            "x": 758,
+            "x": 738,
             "y": 705,
             "width": 77,
             "height": 30,
@@ -10332,7 +10292,7 @@
             },
             {
               "x": 325,
-              "y": 630
+              "y": 610
             }
           ],
           "label": {
@@ -10361,25 +10321,25 @@
           "visible": true,
           "vertices": [
             {
-              "x": 265,
-              "y": 1800
+              "x": 315,
+              "y": 1900
             },
             {
-              "x": 275,
-              "y": 1800
+              "x": 330,
+              "y": 1900
             },
             {
-              "x": 275,
-              "y": 1840
+              "x": 330,
+              "y": 1940
             },
             {
-              "x": 285,
-              "y": 1840
+              "x": 335,
+              "y": 1940
             }
           ],
           "label": {
-            "x": 255,
-            "y": 1762,
+            "x": 305,
+            "y": 1862,
             "width": 77,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10403,21 +10363,21 @@
           "visible": true,
           "vertices": [
             {
-              "x": 265,
-              "y": 1930
+              "x": 315,
+              "y": 2030
             },
             {
-              "x": 290,
-              "y": 1930
+              "x": 340,
+              "y": 2070
             },
             {
-              "x": 325,
-              "y": 1970
+              "x": 375,
+              "y": 2070
             }
           ],
           "label": {
-            "x": 255,
-            "y": 1892,
+            "x": 305,
+            "y": 1992,
             "width": 83,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10441,12 +10401,12 @@
           "visible": true,
           "vertices": [
             {
-              "x": 265,
-              "y": 2080
+              "x": 315,
+              "y": 2180
             },
             {
               "x": 760,
-              "y": 2080
+              "y": 2180
             },
             {
               "x": 760,
@@ -10454,8 +10414,8 @@
             }
           ],
           "label": {
-            "x": 255,
-            "y": 2042,
+            "x": 305,
+            "y": 2142,
             "width": 70,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10479,25 +10439,17 @@
           "visible": true,
           "vertices": [
             {
-              "x": 150,
-              "y": 1985
-            },
-            {
-              "x": 150,
-              "y": 1345
+              "x": 200,
+              "y": 2085
             },
             {
               "x": 130,
-              "y": 1345
-            },
-            {
-              "x": 130,
-              "y": 705
+              "y": 685
             }
           ],
           "label": {
-            "x": 158,
-            "y": 1965,
+            "x": 208,
+            "y": 2065,
             "width": 57,
             "height": 30,
             "fontName": "Arial Unicode MS",
