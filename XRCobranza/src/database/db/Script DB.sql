@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS xrcobranza;
+USE xrcobranza;
+
 CREATE TABLE `abono`  (
   `id_abono` int NOT NULL AUTO_INCREMENT,
   `folio` varchar(50) NULL,
@@ -39,12 +42,6 @@ CREATE TABLE `capital`  (
   `id_estado` int NULL,
   `fecha_reg` datetime NULL,
   PRIMARY KEY (`id_capital`)
-);
-
-CREATE TABLE `cobro_dia`  (
-  `folio` varchar(50) NOT NULL,
-  `id_ruta` int NULL,
-  PRIMARY KEY (`folio`)
 );
 
 CREATE TABLE `configuracion`  (
@@ -161,7 +158,7 @@ CREATE TABLE `persona`  (
   `disp_hr_ini` varchar(30) NULL,
   `disp_hr_fin` varchar(30) NULL,
   `coordenadas` varchar(60) NULL,
-  `id_media` int NULL AUTO_INCREMENT,
+  `id_media` int NULL,
   `id_ruta` int NULL,
   `id_rol` int NULL,
   `id_estado` int NULL,
@@ -229,10 +226,6 @@ CREATE TABLE `sucursal`  (
   PRIMARY KEY (`id_sucursal`)
 );
 
-CREATE TABLE `table_1`  ();
-
-CREATE TABLE `table_2`  ();
-
 CREATE TABLE `tipo_capital`  (
   `id_tipo_capital` int NOT NULL,
   `descripcion` varchar(50) NULL,
@@ -293,8 +286,6 @@ CREATE TABLE `usuario`  (
   PRIMARY KEY (`id_usuario`)
 );
 
-CREATE TABLE `usuario_ruta`  ();
-
 CREATE TABLE `zona_horaria`  (
   `id_zona_horaria` int NOT NULL,
   `utc` varchar(10) NULL,
@@ -302,58 +293,4 @@ CREATE TABLE `zona_horaria`  (
   `descripcion` varchar(100) NULL,
   PRIMARY KEY (`id_zona_horaria`)
 );
-
-ALTER TABLE `abono` ADD CONSTRAINT `abon_foli` FOREIGN KEY (`folio`) REFERENCES `credito` (`folio`);
-ALTER TABLE `abono` ADD CONSTRAINT `abon_tpag` FOREIGN KEY (`id_tipo_pago`) REFERENCES `tipo_pago` (`id_tipo_pago`);
-ALTER TABLE `abono` ADD CONSTRAINT `abon_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `aval` ADD CONSTRAINT `aval_ine` FOREIGN KEY (`ine`) REFERENCES `persona` (`ine`);
-ALTER TABLE `aval` ADD CONSTRAINT `aval_tparen` FOREIGN KEY (`id_tipo_parentesco`) REFERENCES `tipo_parentesco` (`id_tipo_perentesco`);
-ALTER TABLE `capital` ADD CONSTRAINT `capi_sucu` FOREIGN KEY (`id_sucursal`) REFERENCES `sucursal` (`id_sucursal`);
-ALTER TABLE `capital` ADD CONSTRAINT `capi_peri` FOREIGN KEY (`id_periodo`) REFERENCES `periodo` (`id_periodo`);
-ALTER TABLE `capital` ADD CONSTRAINT `capi_usu` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
-ALTER TABLE `capital` ADD CONSTRAINT `capi_tcap` FOREIGN KEY (`id_tipo_capital`) REFERENCES `tipo_capital` (`id_tipo_capital`);
-ALTER TABLE `capital` ADD CONSTRAINT `capi_tcon` FOREIGN KEY (`id_tipo_concepto`) REFERENCES `tipo_concepto` (`id_tipo_concepto`);
-ALTER TABLE `capital` ADD CONSTRAINT `capi_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `capital` ADD CONSTRAINT `capi_med` FOREIGN KEY (`id_media`) REFERENCES `media` (`id_media`);
-ALTER TABLE `cobro_dia` ADD CONSTRAINT `cobr_foli` FOREIGN KEY (`folio`) REFERENCES `credito` (`folio`);
-ALTER TABLE `configuracion` ADD CONSTRAINT `conf_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `configuracion` ADD CONSTRAINT `conf_zona` FOREIGN KEY (`id_zona_horaria`) REFERENCES `zona_horaria` (`id_zona_horaria`);
-ALTER TABLE `configuracion` ADD CONSTRAINT `conf_mone` FOREIGN KEY (`id_moneda`) REFERENCES `moneda` (`id_moneda`);
-ALTER TABLE `credito` ADD CONSTRAINT `cred_usu` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
-ALTER TABLE `credito` ADD CONSTRAINT `cred_ine` FOREIGN KEY (`ine`) REFERENCES `persona` (`ine`);
-ALTER TABLE `credito` ADD CONSTRAINT `cred_tcob` FOREIGN KEY (`id_tipo_cobro`) REFERENCES `tipo_cobro` (`id_tipo_cobro`);
-ALTER TABLE `credito` ADD CONSTRAINT `cred_estcre` FOREIGN KEY (`id_estado_credito`) REFERENCES `estado_credito` (`id_estado_credito`);
-ALTER TABLE `credito` ADD CONSTRAINT `cred_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `credito` ADD CONSTRAINT `cred_tcre` FOREIGN KEY (`id_tipo_credito`) REFERENCES `tipo_credito` (`id_tipo_credito`);
-ALTER TABLE `empresa` ADD CONSTRAINT `empr_conf` FOREIGN KEY (`id_configuracion`) REFERENCES `configuracion` (`id_configuracion`);
-ALTER TABLE `empresa` ADD CONSTRAINT `empr_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `media` ADD CONSTRAINT `media_tip_med` FOREIGN KEY (`id_tipo_media`) REFERENCES `tipo_media` (`id_tipo_media`);
-ALTER TABLE `media` ADD CONSTRAINT `media_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `periodo` ADD CONSTRAINT `peri_sucu` FOREIGN KEY (`id_sucursal`) REFERENCES `sucursal` (`id_sucursal`);
-ALTER TABLE `permiso` ADD CONSTRAINT `perm_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `persona` ADD CONSTRAINT `pers_tip_inm` FOREIGN KEY (`id_tipo_inmueble`) REFERENCES `tipo_inmueble` (`id_tipo_inmueble`);
-ALTER TABLE `persona` ADD CONSTRAINT `pers_ruta` FOREIGN KEY (`id_ruta`) REFERENCES `ruta` (`id_ruta`);
-ALTER TABLE `persona` ADD CONSTRAINT `pers_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `persona` ADD CONSTRAINT `pers_rol` FOREIGN KEY (`id_rol`) REFERENCES `rol` (`id_rol`);
-ALTER TABLE `persona` ADD CONSTRAINT `pers_medi` FOREIGN KEY (`id_media`) REFERENCES `media` (`id_media`);
-ALTER TABLE `rol` ADD CONSTRAINT `rol_empr` FOREIGN KEY (`id_empresa`) REFERENCES `empresa` (`id_empresa`);
-ALTER TABLE `rol` ADD CONSTRAINT `rol_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `rol_permiso` ADD CONSTRAINT `rol_per_rol` FOREIGN KEY (`id_rol`) REFERENCES `rol` (`id_rol`);
-ALTER TABLE `rol_permiso` ADD CONSTRAINT `rol_per_rol_per` FOREIGN KEY (`id_permiso`) REFERENCES `permiso` (`id_permiso`);
-ALTER TABLE `ruta` ADD CONSTRAINT `ruta_sucu` FOREIGN KEY (`id_sucursal`) REFERENCES `sucursal` (`id_sucursal`);
-ALTER TABLE `ruta` ADD CONSTRAINT `ruta_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `sesion` ADD CONSTRAINT `sesi_usua` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
-ALTER TABLE `sesion` ADD CONSTRAINT `sesi_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `solicitud` ADD CONSTRAINT `soli_suc` FOREIGN KEY (`id_sucursal`) REFERENCES `sucursal` (`id_sucursal`);
-ALTER TABLE `solicitud` ADD CONSTRAINT `soli_usu` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
-ALTER TABLE `solicitud` ADD CONSTRAINT `soli_ine` FOREIGN KEY (`ine`) REFERENCES `persona` (`ine`);
-ALTER TABLE `solicitud` ADD CONSTRAINT `soli_tcob` FOREIGN KEY (`id_tipo_cobro`) REFERENCES `tipo_cobro` (`id_tipo_cobro`);
-ALTER TABLE `solicitud` ADD CONSTRAINT `soli_estsol` FOREIGN KEY (`id_estado_solicitud`) REFERENCES `estado_solicitud` (`id_estado_solicitud`);
-ALTER TABLE `solicitud` ADD CONSTRAINT `soli_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `sucursal` ADD CONSTRAINT `sucu_empr` FOREIGN KEY (`id_empresa`) REFERENCES `empresa` (`id_empresa`);
-ALTER TABLE `sucursal` ADD CONSTRAINT `sucu_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
-ALTER TABLE `tipo_concepto` ADD CONSTRAINT `tip_conc_tip_cap` FOREIGN KEY (`id_tipo_capital`) REFERENCES `tipo_capital` (`id_tipo_capital`);
-ALTER TABLE `usuario` ADD CONSTRAINT `usua_sucu` FOREIGN KEY (`id_sucursal`) REFERENCES `sucursal` (`id_sucursal`);
-ALTER TABLE `usuario` ADD CONSTRAINT `usua_ine` FOREIGN KEY (`ine`) REFERENCES `persona` (`ine`);
-ALTER TABLE `usuario` ADD CONSTRAINT `usua_est` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`);
 
