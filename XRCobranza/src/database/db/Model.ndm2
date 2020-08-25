@@ -4275,528 +4275,6 @@
           },
           {
             "objectType": "Table_MYSQL",
-            "name": "credito",
-            "comment": "",
-            "engine": "",
-            "characterSet": "",
-            "collation": "",
-            "autoIncrement": 0,
-            "tablespace": "",
-            "storage": "",
-            "insertMethod": "",
-            "connection": "",
-            "checksum": false,
-            "rowFormat": "",
-            "avgRowLength": 0,
-            "maxRows": 0,
-            "minRows": 0,
-            "keyBlockSize": 0,
-            "packKeys": "",
-            "delayKeyWrite": false,
-            "dataDirectory": "",
-            "indexDirectory": "",
-            "statsAutoRecalc": "",
-            "statsPersistent": "",
-            "statsSamplePages": 0,
-            "union": "",
-            "pageCheckSum": false,
-            "transactional": false,
-            "compression": "",
-            "oldName": "",
-            "encryption": false,
-            "createOptions": "",
-            "createTime": "",
-            "checkTime": "",
-            "dataFree": 0,
-            "dataLength": 0,
-            "indexLength": 0,
-            "maxDataLength": 0,
-            "rows": 0,
-            "updateTime": "",
-            "DDL": "",
-            "partitionBy": "",
-            "partitionByExpr": "",
-            "partitions": 0,
-            "partitionKeyAlgorithm": "",
-            "subPartitionBy": "",
-            "subPartitionByExpr": "",
-            "subPartitions": 0,
-            "subPartitionKeyAlgorithm": "",
-            "fields": [
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "folio",
-                "type": "varchar",
-                "length": 50,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": false,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "folio"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "descripcion",
-                "type": "varchar",
-                "length": 100,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "descripcion"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_usuario",
-                "type": "varchar",
-                "length": 50,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_usuario"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "ine",
-                "type": "varchar",
-                "length": 50,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "ine"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_tipo_cobro",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_tipo_cobro"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "monto_credito",
-                "type": "decimal",
-                "length": 10,
-                "decimals": 2,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "monto_credito"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "monto_pago",
-                "type": "decimal",
-                "length": 10,
-                "decimals": 2,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "monto_pago"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "fecha_entrega",
-                "type": "date",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "fecha_entrega"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "fecha_inicio",
-                "type": "date",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "fecha_inicio"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "fecha_siguiente_pago",
-                "type": "date",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "fecha_siguiente_pago"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "total_pagos",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "total_pagos"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_estado",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_estado"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_tipo_credito",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_tipo_credito"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "fecha_reg",
-                "type": "datetime",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "fecha_reg"
-              }
-            ],
-            "indexes": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_MYSQL",
-              "name": "",
-              "fields": [
-                {
-                  "objectType": "IndexField_MYSQL",
-                  "name": "folio",
-                  "keyLength": 0,
-                  "order": "",
-                  "oldName": ""
-                }
-              ],
-              "oldName": "",
-              "indexMethod": "",
-              "comment": ""
-            },
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "cred_usu",
-                "fields": [
-                  "id_usuario"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "usuario",
-                "referenceFields": [
-                  "id_usuario"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              },
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "cred_ine",
-                "fields": [
-                  "ine"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "persona",
-                "referenceFields": [
-                  "ine"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              },
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "cred_tcob",
-                "fields": [
-                  "id_tipo_cobro"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "tipo_cobro",
-                "referenceFields": [
-                  "id_tipo_cobro"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              },
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "cred_est",
-                "fields": [
-                  "id_estado"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "estado",
-                "referenceFields": [
-                  "id_estado"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              },
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "cred_tcre",
-                "fields": [
-                  "id_tipo_credito"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "tipo_credito",
-                "referenceFields": [
-                  "id_tipo_credito"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              }
-            ],
-            "triggers": [],
-            "tablePartitions": []
-          },
-          {
-            "objectType": "Table_MYSQL",
             "name": "ruta",
             "comment": "",
             "engine": "",
@@ -5315,684 +4793,6 @@
                 "onUpdate": "",
                 "sourceCardinality": "OneAndOnlyOneRelationship",
                 "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              }
-            ],
-            "triggers": [],
-            "tablePartitions": []
-          },
-          {
-            "objectType": "Table_MYSQL",
-            "name": "persona",
-            "comment": "",
-            "engine": "",
-            "characterSet": "",
-            "collation": "",
-            "autoIncrement": 0,
-            "tablespace": "",
-            "storage": "",
-            "insertMethod": "",
-            "connection": "",
-            "checksum": false,
-            "rowFormat": "",
-            "avgRowLength": 0,
-            "maxRows": 0,
-            "minRows": 0,
-            "keyBlockSize": 0,
-            "packKeys": "",
-            "delayKeyWrite": false,
-            "dataDirectory": "",
-            "indexDirectory": "",
-            "statsAutoRecalc": "",
-            "statsPersistent": "",
-            "statsSamplePages": 0,
-            "union": "",
-            "pageCheckSum": false,
-            "transactional": false,
-            "compression": "",
-            "oldName": "",
-            "encryption": false,
-            "createOptions": "",
-            "createTime": "",
-            "checkTime": "",
-            "dataFree": 0,
-            "dataLength": 0,
-            "indexLength": 0,
-            "maxDataLength": 0,
-            "rows": 0,
-            "updateTime": "",
-            "DDL": "",
-            "partitionBy": "",
-            "partitionByExpr": "",
-            "partitions": 0,
-            "partitionKeyAlgorithm": "",
-            "subPartitionBy": "",
-            "subPartitionByExpr": "",
-            "subPartitions": 0,
-            "subPartitionKeyAlgorithm": "",
-            "fields": [
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "ine",
-                "type": "varchar",
-                "length": 20,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": false,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "ine"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "ine_ref",
-                "type": "varchar",
-                "length": 20,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "ine_ref"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "alias",
-                "type": "varchar",
-                "length": 60,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "alias"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "nombre",
-                "type": "varchar",
-                "length": 50,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "nombre"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "apellido_paterno",
-                "type": "varchar",
-                "length": 20,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "apellido_paterno"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "apellido_materno",
-                "type": "varchar",
-                "length": 20,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "apellido_materno"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "direccion",
-                "type": "varchar",
-                "length": 250,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "direccion"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "no_casa",
-                "type": "varchar",
-                "length": 10,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "no_casa"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "referencias",
-                "type": "varchar",
-                "length": 250,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "referencias"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "telefono",
-                "type": "varchar",
-                "length": 12,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "telefono"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_tipo_inmueble",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_tipo_inmueble"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "disp_hr_ini",
-                "type": "varchar",
-                "length": 30,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "disp_hr_ini"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "disp_hr_fin",
-                "type": "varchar",
-                "length": 30,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "disp_hr_fin"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "coordenadas",
-                "type": "varchar",
-                "length": 60,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "coordenadas"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_media",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "binary",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_media"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_rol",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_rol"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_ruta",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_ruta"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_estado",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_estado"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_sucursal",
-                "type": "varchar",
-                "length": 50,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_sucursal"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "fecha_reg",
-                "type": "datetime",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "fecha_reg"
-              }
-            ],
-            "indexes": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_MYSQL",
-              "name": "",
-              "fields": [
-                {
-                  "objectType": "IndexField_MYSQL",
-                  "name": "ine",
-                  "keyLength": 0,
-                  "order": "",
-                  "oldName": ""
-                }
-              ],
-              "oldName": "",
-              "indexMethod": "",
-              "comment": ""
-            },
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "pers_tip_inm",
-                "fields": [
-                  "id_tipo_inmueble"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "tipo_inmueble",
-                "referenceFields": [
-                  "id_tipo_inmueble"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              },
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "pers_est",
-                "fields": [
-                  "id_estado"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "estado",
-                "referenceFields": [
-                  "id_estado"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              },
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "pers_rol",
-                "fields": [
-                  "id_rol"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "rol",
-                "referenceFields": [
-                  "id_rol"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              },
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "pers_medi",
-                "fields": [
-                  "id_media"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "media",
-                "referenceFields": [
-                  "id_media"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "ZeroOrManyRelationship",
-                "targetCardinality": "ZeroOrManyRelationship",
-                "oldName": ""
-              },
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "pers_ruta",
-                "fields": [
-                  "id_ruta"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "ruta",
-                "referenceFields": [
-                  "id_ruta"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "ZeroOrOneRelationship",
-                "targetCardinality": "ZeroOrOneRelationship",
                 "oldName": ""
               }
             ],
@@ -6874,8 +5674,8 @@
                 ],
                 "onDelete": "",
                 "onUpdate": "",
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "NoneRelationship",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "ZeroOrOneRelationship",
                 "oldName": ""
               },
               {
@@ -6891,8 +5691,8 @@
                 ],
                 "onDelete": "",
                 "onUpdate": "",
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "NoneRelationship",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "ZeroOrManyRelationship",
                 "oldName": ""
               }
             ],
@@ -7137,8 +5937,8 @@
                 ],
                 "onDelete": "",
                 "onUpdate": "",
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "NoneRelationship",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "ZeroOrOneRelationship",
                 "oldName": ""
               },
               {
@@ -7154,8 +5954,8 @@
                 ],
                 "onDelete": "",
                 "onUpdate": "",
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "NoneRelationship",
+                "sourceCardinality": "ZeroOrOneRelationship",
+                "targetCardinality": "ZeroOrOneRelationship",
                 "oldName": ""
               }
             ],
@@ -7400,8 +6200,8 @@
                 ],
                 "onDelete": "",
                 "onUpdate": "",
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "NoneRelationship",
+                "sourceCardinality": "ZeroOrOneRelationship",
+                "targetCardinality": "ZeroOrOneRelationship",
                 "oldName": ""
               },
               {
@@ -7417,8 +6217,8 @@
                 ],
                 "onDelete": "",
                 "onUpdate": "",
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "NoneRelationship",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "ZeroOrManyRelationship",
                 "oldName": ""
               },
               {
@@ -7434,8 +6234,8 @@
                 ],
                 "onDelete": "",
                 "onUpdate": "",
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "NoneRelationship",
+                "sourceCardinality": "ZeroOrOneRelationship",
+                "targetCardinality": "ZeroOrOneRelationship",
                 "oldName": ""
               }
             ],
@@ -8114,6 +6914,1206 @@
             ],
             "triggers": [],
             "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "persona",
+            "comment": "",
+            "engine": "",
+            "characterSet": "",
+            "collation": "",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 0,
+            "indexLength": 0,
+            "maxDataLength": 0,
+            "rows": 0,
+            "updateTime": "",
+            "DDL": "",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "ine",
+                "type": "varchar",
+                "length": 20,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "ine"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "ine_ref",
+                "type": "varchar",
+                "length": 20,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "ine_ref"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "alias",
+                "type": "varchar",
+                "length": 60,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "alias"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "nombre",
+                "type": "varchar",
+                "length": 50,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "nombre"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "apellido_paterno",
+                "type": "varchar",
+                "length": 20,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "apellido_paterno"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "apellido_materno",
+                "type": "varchar",
+                "length": 20,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "apellido_materno"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "direccion",
+                "type": "varchar",
+                "length": 250,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "direccion"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "no_casa",
+                "type": "varchar",
+                "length": 10,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "no_casa"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "referencias",
+                "type": "varchar",
+                "length": 250,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "referencias"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "telefono",
+                "type": "varchar",
+                "length": 12,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "telefono"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_tipo_inmueble",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_tipo_inmueble"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "disp_hr_ini",
+                "type": "varchar",
+                "length": 30,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "disp_hr_ini"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "disp_hr_fin",
+                "type": "varchar",
+                "length": 30,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "disp_hr_fin"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "coordenadas",
+                "type": "varchar",
+                "length": 60,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "coordenadas"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_media",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "binary",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_media"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_rol",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_rol"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_ruta",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_ruta"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_sucursal",
+                "type": "varchar",
+                "length": 50,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_sucursal"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_estado",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_estado"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "fecha_reg",
+                "type": "datetime",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "fecha_reg"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "ine",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": ""
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "",
+              "comment": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "pers_tip_inm",
+                "fields": [
+                  "id_tipo_inmueble"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "tipo_inmueble",
+                "referenceFields": [
+                  "id_tipo_inmueble"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "pers_est",
+                "fields": [
+                  "id_estado"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "estado",
+                "referenceFields": [
+                  "id_estado"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "pers_rol",
+                "fields": [
+                  "id_rol"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "rol",
+                "referenceFields": [
+                  "id_rol"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "pers_medi",
+                "fields": [
+                  "id_media"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "media",
+                "referenceFields": [
+                  "id_media"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "ZeroOrManyRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "pers_ruta",
+                "fields": [
+                  "id_ruta"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "ruta",
+                "referenceFields": [
+                  "id_ruta"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "ZeroOrOneRelationship",
+                "targetCardinality": "ZeroOrOneRelationship",
+                "oldName": ""
+              }
+            ],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "credito",
+            "comment": "",
+            "engine": "",
+            "characterSet": "",
+            "collation": "",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 0,
+            "indexLength": 0,
+            "maxDataLength": 0,
+            "rows": 0,
+            "updateTime": "",
+            "DDL": "",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "folio",
+                "type": "varchar",
+                "length": 50,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "folio"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "descripcion",
+                "type": "varchar",
+                "length": 100,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "descripcion"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_usuario",
+                "type": "varchar",
+                "length": 50,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_usuario"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "ine",
+                "type": "varchar",
+                "length": 50,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "ine"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_tipo_cobro",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_tipo_cobro"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "monto_credito",
+                "type": "decimal",
+                "length": 10,
+                "decimals": 2,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "monto_credito"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "monto_pago",
+                "type": "decimal",
+                "length": 10,
+                "decimals": 2,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "monto_pago"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "fecha_entrega",
+                "type": "date",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "fecha_entrega"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "fecha_inicio",
+                "type": "date",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "fecha_inicio"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "fecha_siguiente_pago",
+                "type": "date",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "fecha_siguiente_pago"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "total_pagos",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "total_pagos"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_tipo_credito",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_tipo_credito"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_estado",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_estado"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "fecha_reg",
+                "type": "datetime",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "fecha_reg"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "folio",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": ""
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "",
+              "comment": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "cred_usu",
+                "fields": [
+                  "id_usuario"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "usuario",
+                "referenceFields": [
+                  "id_usuario"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "cred_ine",
+                "fields": [
+                  "ine"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "persona",
+                "referenceFields": [
+                  "ine"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "cred_tcob",
+                "fields": [
+                  "id_tipo_cobro"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "tipo_cobro",
+                "referenceFields": [
+                  "id_tipo_cobro"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "cred_est",
+                "fields": [
+                  "id_estado"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "estado",
+                "referenceFields": [
+                  "id_estado"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "cred_tcre",
+                "fields": [
+                  "id_tipo_credito"
+                ],
+                "referenceSchema": "xrcobranza",
+                "referenceTable": "tipo_credito",
+                "referenceFields": [
+                  "id_tipo_credito"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              }
+            ],
+            "triggers": [],
+            "tablePartitions": []
           }
         ],
         "views": []
@@ -8130,7 +8130,7 @@
       "isBalckWhite": false,
       "showDBSchemaName": false,
       "showViewRelations": true,
-      "notation": "default",
+      "notation": "classic",
       "showFieldComment": false,
       "showTableComment": false,
       "shapes": [
@@ -8170,7 +8170,7 @@
           "type": "table",
           "schemaName": "xrcobranza",
           "tableName": "sucursal",
-          "x": 650,
+          "x": 640,
           "y": 790,
           "width": 200,
           "height": 200,
@@ -8603,7 +8603,7 @@
           "schemaName": "xrcobranza",
           "tableName": "articulo",
           "x": 2050,
-          "y": 440,
+          "y": 460,
           "width": 200,
           "height": 160,
           "isBold": false,
@@ -8619,7 +8619,7 @@
           "schemaName": "xrcobranza",
           "tableName": "inventario",
           "x": 2050,
-          "y": 620,
+          "y": 660,
           "width": 200,
           "height": 160,
           "isBold": false,
@@ -8720,7 +8720,7 @@
           "name": "TIPOS",
           "x": 70,
           "y": 770,
-          "width": 500,
+          "width": 490,
           "height": 510,
           "layerColor": {
             "r": 255,
@@ -8805,7 +8805,7 @@
           "x": 1780,
           "y": 40,
           "width": 490,
-          "height": 790,
+          "height": 810,
           "layerColor": {
             "r": 255,
             "g": 128,
@@ -8831,25 +8831,17 @@
           "visible": true,
           "vertices": [
             {
-              "x": 810,
-              "y": 1005
+              "x": 855,
+              "y": 870
             },
             {
-              "x": 810,
-              "y": 1030
-            },
-            {
-              "x": 960,
-              "y": 1030
-            },
-            {
-              "x": 960,
-              "y": 1005
+              "x": 885,
+              "y": 870
             }
           ],
           "label": {
-            "x": 818,
-            "y": 995,
+            "x": 851,
+            "y": 872,
             "width": 80,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -8881,11 +8873,11 @@
               "y": 1040
             },
             {
-              "x": 730,
+              "x": 720,
               "y": 1030
             },
             {
-              "x": 730,
+              "x": 720,
               "y": 1005
             }
           ],
@@ -8983,12 +8975,12 @@
           "visible": true,
           "vertices": [
             {
-              "x": 1450,
-              "y": 75
+              "x": 1255,
+              "y": 250
             },
             {
-              "x": 1450,
-              "y": 350
+              "x": 980,
+              "y": 250
             },
             {
               "x": 140,
@@ -9000,8 +8992,8 @@
             }
           ],
           "label": {
-            "x": 1452,
-            "y": 45,
+            "x": 1265,
+            "y": 212,
             "width": 63,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9025,7 +9017,7 @@
           "visible": true,
           "vertices": [
             {
-              "x": 635,
+              "x": 625,
               "y": 930
             },
             {
@@ -9042,7 +9034,7 @@
             }
           ],
           "label": {
-            "x": 645,
+            "x": 635,
             "y": 892,
             "width": 64,
             "height": 30,
@@ -9109,14 +9101,6 @@
               "y": 405
             },
             {
-              "x": 120,
-              "y": 470
-            },
-            {
-              "x": 110,
-              "y": 470
-            },
-            {
               "x": 110,
               "y": 455
             }
@@ -9159,7 +9143,7 @@
               "y": 860
             },
             {
-              "x": 635,
+              "x": 625,
               "y": 860
             }
           ],
@@ -9191,14 +9175,6 @@
             {
               "x": 160,
               "y": 615
-            },
-            {
-              "x": 160,
-              "y": 711
-            },
-            {
-              "x": 130,
-              "y": 711
             },
             {
               "x": 130,
@@ -9265,8 +9241,8 @@
           "visible": true,
           "vertices": [
             {
-              "x": 875,
-              "y": 300
+              "x": 910,
+              "y": 332
             },
             {
               "x": 210,
@@ -9274,8 +9250,8 @@
             }
           ],
           "label": {
-            "x": 885,
-            "y": 262,
+            "x": 912,
+            "y": 282,
             "width": 110,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -9421,7 +9397,7 @@
               "y": 950
             },
             {
-              "x": 865,
+              "x": 855,
               "y": 950
             }
           ],
@@ -9460,11 +9436,11 @@
             },
             {
               "x": 780,
-              "y": 730
+              "y": 530
             },
             {
               "x": 780,
-              "y": 1265
+              "y": 1065
             }
           ],
           "label": {
@@ -9623,12 +9599,12 @@
               "y": 435
             },
             {
-              "x": 810,
-              "y": 715
+              "x": 845,
+              "y": 640
             },
             {
-              "x": 810,
-              "y": 715
+              "x": 845,
+              "y": 640
             }
           ],
           "label": {
@@ -9696,11 +9672,11 @@
             },
             {
               "x": 1840,
-              "y": 950
+              "y": 970
             },
             {
               "x": 305,
-              "y": 950
+              "y": 970
             }
           ],
           "label": {
@@ -9851,20 +9827,16 @@
               "y": 435
             },
             {
-              "x": 1820,
+              "x": 1750,
               "y": 520
             },
             {
-              "x": 1810,
-              "y": 1240
-            },
-            {
-              "x": 1570,
-              "y": 940
+              "x": 1750,
+              "y": 910
             },
             {
               "x": 565,
-              "y": 940
+              "y": 935
             }
           ],
           "label": {
@@ -9893,12 +9865,8 @@
           "visible": true,
           "vertices": [
             {
-              "x": 2170,
-              "y": 85
-            },
-            {
-              "x": 2170,
-              "y": 270
+              "x": 2035,
+              "y": 220
             },
             {
               "x": 2030,
@@ -9906,8 +9874,8 @@
             }
           ],
           "label": {
-            "x": 2101,
-            "y": 55,
+            "x": 1974,
+            "y": 182,
             "width": 71,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10011,8 +9979,16 @@
               "y": 650
             },
             {
-              "x": 635,
-              "y": 970
+              "x": 605,
+              "y": 650
+            },
+            {
+              "x": 605,
+              "y": 840
+            },
+            {
+              "x": 625,
+              "y": 840
             }
           ],
           "label": {
@@ -10088,7 +10064,7 @@
             },
             {
               "x": 615,
-              "y": 460
+              "y": 490
             }
           ],
           "label": {
@@ -10194,7 +10170,7 @@
           "vertices": [
             {
               "x": 615,
-              "y": 100
+              "y": 140
             },
             {
               "x": 555,
@@ -10203,7 +10179,7 @@
           ],
           "label": {
             "x": 565,
-            "y": 62,
+            "y": 102,
             "width": 60,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10266,7 +10242,7 @@
             },
             {
               "x": 865,
-              "y": 320
+              "y": 410
             }
           ],
           "label": {
@@ -10334,14 +10310,6 @@
           "vertices": [
             {
               "x": 730,
-              "y": 525
-            },
-            {
-              "x": 730,
-              "y": 525
-            },
-            {
-              "x": 740,
               "y": 525
             },
             {
@@ -10418,11 +10386,11 @@
           "vertices": [
             {
               "x": 1485,
-              "y": 120
+              "y": 160
             },
             {
               "x": 1500,
-              "y": 120
+              "y": 160
             },
             {
               "x": 1500,
@@ -10435,7 +10403,7 @@
           ],
           "label": {
             "x": 1475,
-            "y": 82,
+            "y": 122,
             "width": 77,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10497,21 +10465,17 @@
           "visible": true,
           "vertices": [
             {
-              "x": 1485,
-              "y": 400
+              "x": 1255,
+              "y": 390
             },
             {
-              "x": 750,
-              "y": 400
-            },
-            {
-              "x": 750,
-              "y": 715
+              "x": 760,
+              "y": 525
             }
           ],
           "label": {
-            "x": 1475,
-            "y": 362,
+            "x": 1265,
+            "y": 352,
             "width": 70,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10612,11 +10576,11 @@
           "vertices": [
             {
               "x": 845,
-              "y": 680
+              "y": 660
             },
             {
               "x": 990,
-              "y": 680
+              "y": 660
             },
             {
               "x": 990,
@@ -10625,7 +10589,7 @@
           ],
           "label": {
             "x": 835,
-            "y": 642,
+            "y": 622,
             "width": 81,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10658,11 +10622,11 @@
             },
             {
               "x": 2032,
-              "y": 280
+              "y": 300
             },
             {
               "x": 2030,
-              "y": 280
+              "y": 300
             }
           ],
           "label": {
@@ -10704,7 +10668,7 @@
             },
             {
               "x": 2150,
-              "y": 425
+              "y": 445
             }
           ],
           "label": {
@@ -10734,11 +10698,11 @@
           "vertices": [
             {
               "x": 2035,
-              "y": 520
+              "y": 540
             },
             {
               "x": 1000,
-              "y": 520
+              "y": 540
             },
             {
               "x": 1000,
@@ -10747,7 +10711,7 @@
           ],
           "label": {
             "x": 1978,
-            "y": 482,
+            "y": 502,
             "width": 67,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10772,11 +10736,11 @@
           "vertices": [
             {
               "x": 2035,
-              "y": 530
+              "y": 550
             },
             {
               "x": 1170,
-              "y": 530
+              "y": 550
             },
             {
               "x": 1170,
@@ -10789,7 +10753,7 @@
           ],
           "label": {
             "x": 1994,
-            "y": 492,
+            "y": 512,
             "width": 51,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10814,20 +10778,20 @@
           "vertices": [
             {
               "x": 2035,
-              "y": 700
+              "y": 740
             },
             {
-              "x": 750,
-              "y": 700
+              "x": 740,
+              "y": 740
             },
             {
-              "x": 750,
+              "x": 740,
               "y": 775
             }
           ],
           "label": {
             "x": 1980,
-            "y": 662,
+            "y": 702,
             "width": 65,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10852,7 +10816,7 @@
           "vertices": [
             {
               "x": 2150,
-              "y": 605
+              "y": 645
             },
             {
               "x": 2150,
@@ -10864,12 +10828,12 @@
             },
             {
               "x": 2150,
-              "y": 615
+              "y": 635
             }
           ],
           "label": {
             "x": 2158,
-            "y": 585,
+            "y": 625,
             "width": 52,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -10894,11 +10858,11 @@
           "vertices": [
             {
               "x": 2035,
-              "y": 710
+              "y": 750
             },
             {
               "x": 110,
-              "y": 710
+              "y": 750
             },
             {
               "x": 110,
@@ -10907,7 +10871,7 @@
           ],
           "label": {
             "x": 1992,
-            "y": 672,
+            "y": 712,
             "width": 53,
             "height": 30,
             "fontName": "Arial Unicode MS",

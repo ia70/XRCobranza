@@ -73,3 +73,7 @@ INSERT INTO tipo_pago VALUES(DEFAULT, "Pago extra");
 INSERT INTO tipo_pago VALUES(DEFAULT, "Sin pago");
 INSERT INTO tipo_pago VALUES(DEFAULT, "Sin visitar");
 INSERT INTO tipo_pago VALUES(DEFAULT, "Fin de credito");
+
+-- USUARIO ------------------------------------------------
+INSERT INTO persona VALUES("I01", NULL, "Administrador", "Daniel", "Pérez", "C", "Comalcalco", NULL, NULL, "9141198098", 1, NULL, NULL, NULL, NULL, 4, NULL, NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES("xcoru", "I01", "@xcoru12345", NULL, 1, "2020-08-23");
