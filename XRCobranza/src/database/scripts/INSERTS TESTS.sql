@@ -1,16 +1,16 @@
 -- PERSONA - USUARIO ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 INSERT INTO persona VALUES("I02", NULL, "Cobrador", "Elias", "Ovando", "Caña", "Comalcalco", NULL, NULL, "993452189", 1, NULL, NULL, NULL, NULL, 2, 1, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES("U02", I01, "I02", "12345", NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES("U02", "I02", "12345", NULL, 1, "2020-08-23");
 
 INSERT INTO persona VALUES("I03", NULL, "Vende tacos", "Sara", "Laines", "Lopez", "Comalcalco", NULL, NULL, "933452158", 1, NULL, NULL, NULL, NULL, 3, 1, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES("U03", I01, "I03", "12345", NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES("U03", "I03", "12345", NULL, 1, "2020-08-23");
 
 INSERT INTO persona VALUES("I04", NULL, "Salbutes canul", "Eduardo", "Canul", "Arias", "Comalcalco", NULL, NULL, "9339852365", 1, NULL, NULL, NULL, NULL, 3, 1, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES("U04", I01, "I04", "12345", NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES("U04", "I04", "12345", NULL, 1, "2020-08-23");
 
 INSERT INTO persona VALUES("I05", NULL, "Guero Zapatos", "Marcos", "Carrillo", "Jimenez", "Comalcalco", NULL, NULL, "9334568130", 1, NULL, NULL, NULL, NULL, 3, 1, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES("U05", I01, "I05", "12345", NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES("U05", "I05", "12345", NULL, 1, "2020-08-23");
 
 
 -- RUTAS -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -33,5 +33,7 @@ INSERT INTO sucursal VALUES(DEFAULT, "E01", "SUCURSAL 01", "COMALCALCO", 86300, 
 
 INSERT INTO credito VALUES("C01", "SILLA", "U02", "I03", 1, 3000, 150, "2020-08-24", "2020-08-24", "2020-08-24", 24, 1, 1, "2020-08-24");
 INSERT INTO credito VALUES("C02", "SILLA", "U02", "I04", 1, 2000, 100, "2020-08-24", "2020-08-24", "2020-08-24", 24, 1, 1, "2020-08-24");
-INSERT INTO credito VALUES("C03", "SILLA", "U02", "I04", 1, 2000, 100, "2020-08-24", "2020-08-24", "2020-08-24", 24, 1, 1, "2020-08-24");
+INSERT INTO credito VALUES("C03", "SILLA", "U02", "I04", 1, 5000, 250, "2020-08-24", "2020-08-24", "2020-08-24", 24, 1, 1, "2020-08-24");
 INSERT INTO credito VALUES("C04", "SILLA", "U02", "I05", 1, 4000, 200, "2020-08-24", "2020-08-24", "2020-08-24", 24, 1, 1, "2020-08-24");
+
+
