@@ -6,56 +6,44 @@ DELIMITER //
 CREATE PROCEDURE CARTERA_CLIENTES (
 	IN usuario VARCHAR ( 30 )) 
 	
-	BEGIN-- a Persona
--- b Credito
--- c Abono
--- d Usuario_establecimiento
--- e Usuario_ruta
--- f Usuario
--- g Ruta
+	BEGIN
+
 	IF
 		usuario = "0" THEN
 		SELECT
-			f.id_usuario,
-			g.id_ruta,
-			a.alias,
-			CONCAT_WS( ' ', a.nombre, a.apellido_paterno, a.apellido_materno ) AS "nombre",
-			IF((b.pagos_total * b.monto_pago ) - SUM( c.monto ) IS NULL, b.monto_total, (b.pagos_total * b.monto_pago ) - SUM( c.monto ) ) AS "restante",
-			b.folio_credito
+			u.id_usuario,
+			u.id_ruta,
+			p.alias,
+			CONCAT_WS( ' ', p.nombre, p.apellido_paterno, p.apellido_materno ) AS "nombre",
+			IF((c.total_pagos * c.monto_pago ) - SUM( a.monto ) IS NULL, c.total_pagos * c.monto_pago , (c.total_pagos * c.monto_pago ) - SUM( a.monto ) ) AS "restante",
+			c.folio
 		FROM
-			credito b
-			INNER JOIN usuario_establecimiento AS d ON d.id_usuario_establecimiento = b.id_usuario_establecimiento
-			INNER JOIN persona AS a ON a.ine = d.ine
-			INNER JOIN usuario_ruta AS e ON e.id_ruta = d.id_ruta
-			INNER JOIN usuario AS f ON f.id_usuario = e.id_usuario
-			INNER JOIN ruta AS g ON g.id_ruta = e.id_ruta
-			LEFT JOIN abono AS c ON c.folio_credito = b.folio_credito 
+			credito c
+			INNER JOIN usuario AS u ON c.id_usuario = u.id_usuario
+			INNER JOIN persona AS p ON u.id_persona = p.id_persona
+			LEFT JOIN abono AS a ON c.folio = c.folio
 		WHERE
-			b.id_estado_credito = 1 
+			c.id_estado = 1 
 		GROUP BY
-			b.folio_credito;
-		ELSE 
+			c.folio;
+	ELSE 
 		
 		SELECT
-			f.id_usuario,
-			g.id_ruta,
-			a.alias,
-			CONCAT_WS( ' ', a.nombre, a.apellido_paterno, a.apellido_materno ) AS "nombre",
-			IF((b.pagos_total * monto_pago ) - SUM( c.monto ) IS NULL, b.monto_total, (b.pagos_total * monto_pago ) - SUM( c.monto ) ) AS "restante",
-			b.folio_credito
+			u.id_usuario,
+			u.id_ruta,
+			p.alias,
+			CONCAT_WS( ' ', p.nombre, p.apellido_paterno, p.apellido_materno ) AS "nombre",
+			IF((c.total_pagos * c.monto_pago ) - SUM( a.monto ) IS NULL, c.total_pagos * c.monto_pago , (c.total_pagos * c.monto_pago ) - SUM( a.monto ) ) AS "restante",
+			c.folio
 		FROM
-			credito b
-			INNER JOIN usuario_establecimiento AS d ON d.id_usuario_establecimiento = b.id_usuario_establecimiento
-			INNER JOIN persona AS a ON a.ine = d.ine
-			INNER JOIN usuario_ruta AS e ON e.id_ruta = d.id_ruta
-			INNER JOIN usuario AS f ON f.id_usuario = e.id_usuario
-			INNER JOIN ruta AS g ON g.id_ruta = e.id_ruta
-			LEFT JOIN abono AS c ON c.folio_credito = b.folio_credito 
+			credito c
+			INNER JOIN usuario AS u ON c.id_usuario = u.id_usuario
+			INNER JOIN persona AS p ON u.id_persona = p.id_persona
+			LEFT JOIN abono AS a ON c.folio = c.folio
 		WHERE
-			f.id_usuario = usuario 
-			AND b.id_estado_credito = 1 
+			c.id_usuario = usuario AND c.id_estado = 1 
 		GROUP BY
-			b.folio_credito;
+			c.folio;
 		
 	END IF;
 
