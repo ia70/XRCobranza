@@ -74,6 +74,23 @@ INSERT INTO tipo_pago VALUES(DEFAULT, "Sin pago");
 INSERT INTO tipo_pago VALUES(DEFAULT, "Sin visitar");
 INSERT INTO tipo_pago VALUES(DEFAULT, "Fin de credito");
 
+
+-- TIPO_PAGO ----------------------------------------------
+
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Recomendado");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Padre - Madre");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Hijo(a)");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Hermano(a)");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Primo(a)");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Tio(a)");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Pareja");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Amigo(a)");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Conocido(a)");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Vecino(a)");
+INSERT INTO tipo_parentesco VALUES(DEFAULT, "Otro...");
+
+
+
 -- USUARIO ------------------------------------------------
 INSERT INTO persona VALUES(DEFAULT, "I01", "Administrador", "Daniel", "Pérez", "C", "Comalcalco", NULL, NULL, "9141198098", 1, NULL, NULL, NULL, NULL, 1, 1, "2020-08-23");
 INSERT INTO usuario VALUES(DEFAULT, "xcoru", "@xcoru12345", 1, NULL, 4, NULL, NULL, 1, "2020-08-23");
