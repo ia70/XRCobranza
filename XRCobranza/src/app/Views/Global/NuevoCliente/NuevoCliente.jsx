@@ -4,7 +4,8 @@ import Navbar from '../../../Components/Content/Navbar/Navbar.jsx';
 import { Title } from '../../../Components/Content/Title/Title.jsx';
 import TextBox from '../../../Components/Form/TextBox/TextBox.jsx';
 import { TextPhoneNumber } from '../../../Components/Form/TextPhoneNumber/TextPhoneNumber.jsx';
-import { TextEmail } from '../../../Components/Form/TextEmail/TextEmail.jsx';
+import { TextTime } from '../../../Components/Form/TextTime/TextTime.jsx';
+import TextSearchExt from '../../../Components/Form/TextSearchExt/TextSearchExt.jsx';
 import { BtnSubmit } from '../../../Components/Form/BtnSubmit/BtnSubmit.jsx';
 import ComboBox from '../../../Components/Form/ComboBox/ComboBox.jsx';
 import { FileInput } from '../../../Components/Form/FileInput/FileInput.jsx';
@@ -25,10 +26,62 @@ class NuevoCliente extends Component {
             user: sessionStorage.getItem('user'),
             sucursal: sessionStorage.getItem('sucursal'),
             hash: sessionStorage.getItem('hash'),
-            rol: sessionStorage.getItem('rol')
+            rol: sessionStorage.getItem('rol'),
+            filtro: [],
+            cliente: []
         };
 
         this.enviar = this.enviar.bind(this);
+        this.filtrar = this.filtrar.bind(this);
+    }
+
+    filtrar(cadena) {
+        if (this._isMounted) {
+            cadena = cadena.toLowerCase();
+            if (cadena == "" || cadena == null) {
+                this.setState({ filtro: [] });
+            } else {
+                if (this._isMounted == true) {
+                    var url ="http://" + keys.database.host +":"+ keys.server.port + keys.api.url + 'persona/filtrar_clientes';
+
+                    var data_text = {
+                        user: this.state.user,
+                        sucursal: this.state.sucursal,
+                        hash: this.state.hash,
+                        filtro: cadena
+                    };
+
+                    fetch(url, {
+                        method: 'POST',
+                        body: JSON.stringify(data_text),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    }).then(res => res.json())
+                        .catch(error => {
+                            console.error('Error:', error)
+                        })
+                        .then(response => {
+                            if (response.persona.length == 0) {
+                                this.setState({
+                                    filtro: response.persona,
+                                    cliente: {
+                                        ine: "",
+                                        nombre: "",
+                                        telefono: "",
+                                        no_creditos: "",
+                                        calificacion: ""
+                                    }
+                                });
+                            } else
+                                this.setState({
+                                    filtro: response.persona,
+                                    cliente: response.persona[0]
+                                });
+                        });
+                }
+            }
+        }
     }
 
     enviar() {
@@ -183,11 +236,17 @@ class NuevoCliente extends Component {
 
                         <Title title="DATOS DEL AVAL" />
 
+                        <TextSearchExt id="a_search" label="Buscar" evento={this.filtrar} />
+                        <ComboBox id="a_listaclientes" label="Cliente" items={this.state.filtro} value={"ine"} description={"nombre"} evento={this.leer} />
+
                         <TextBox id="a_nombre" label="Nombre" holder="Nombre del cliente" help="" required={true} maxlength={50} />
                         <TextBox id="a_apaterno" label="A. Paterno" holder="Apellido paterno" help="" required={true} maxlength={20} />
                         <TextBox id="a_amaterno" label="A. Materno" holder="Apellido materno" help="" required={true} maxlength={20} />
+                        <TextBox id="a_direccion" label="Dirección" holder="Dirección" help="" required={true} maxlength={250} />
                         <TextPhoneNumber id="a_telefono" label="Telefono" holder="Telefono" help="" required={false} />
-                        <TextBox id="a_parentesco" label="Parentesco" holder="Parentesco" help="" required={true} maxlength={50} />
+
+                        <ComboBox id="a_parentesco" label="Parentesco" tabla='tipo_parentesco' value={"id_tipo_parentesco"} description={"descripcion"} ></ComboBox>
+            
 
                         <Title title="COBRANZA" />
                         <ComboBox id="c_ruta" label="Asignar a ruta" tabla='ruta' value={"id_ruta"} description={"descripcion"} ></ComboBox>
