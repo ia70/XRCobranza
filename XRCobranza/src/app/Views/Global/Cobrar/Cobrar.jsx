@@ -168,7 +168,7 @@ class Cobrar extends Component {
         } else {
 
             if (this._isMounted == false) {
-                var url = "http://" + keys.database.host + keys.api.url + 'cobrar';
+                var url = "http://" + keys.database.host + ":" + keys.server.port + keys.api.url + 'cobrar';
 
                 var data_text = {
                     user: this.state.user,

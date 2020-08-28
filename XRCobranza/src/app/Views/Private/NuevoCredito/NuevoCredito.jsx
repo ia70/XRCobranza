@@ -195,7 +195,7 @@ class SolicitarDinero extends Component {
                 this.setState({ filtro: [] });
             } else {
                 if (this._isMounted == true) {
-                    var url ="http://" + keys.database.host + keys.api.url + 'persona/filtrar_clientes';
+                    var url ="http://" + keys.database.host +":"+ keys.server.port + keys.api.url + 'persona/filtrar_clientes';
 
                     var data_text = {
                         user: this.state.user,

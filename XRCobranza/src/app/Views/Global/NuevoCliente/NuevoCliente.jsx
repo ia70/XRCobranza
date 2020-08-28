@@ -8,7 +8,6 @@ import { TextEmail } from '../../../Components/Form/TextEmail/TextEmail.jsx';
 import { BtnSubmit } from '../../../Components/Form/BtnSubmit/BtnSubmit.jsx';
 import ComboBox from '../../../Components/Form/ComboBox/ComboBox.jsx';
 import { FileInput } from '../../../Components/Form/FileInput/FileInput.jsx';
-import { TextTime } from '../../../Components/Form/TextTime/TextTime.jsx';
 import keys from '../../../../keys';
 import { getDateTime } from '../../../../lib/util';
 
@@ -159,47 +158,26 @@ class NuevoCliente extends Component {
                 <Navbar setLogo={Logo} title="Nuevo Cliente" setButton={true} />
                 <div className="container-fluid">
                     <div className="row" >
+                        
                         <Title title="DATOS PERSONALES" />
 
-                        <TextBox id="p_ine" label="INE" holder="Clave de Credencial" help="" required={true} maxlength={30} />
+                        <TextBox id="p_ine" label="INE" holder="Clave de Credencial" help="" required={true} maxlength={20} />
                         <TextBox id="p_alias" label="Alias" holder="Alias Cliente" help="" required={true} maxlength={60} />
                         <TextBox id="p_nombre" label="Nombre" holder="Nombre del cliente" help="" required={true} maxlength={50} />
-                        <TextBox id="p_apaterno" label="A. Paterno" holder="Apellido paterno" help="" required={true} maxlength={20} />
-                        <TextBox id="p_amaterno" label="A. Materno" holder="Apellido materno" help="" required={true} maxlength={20} />
-                        <TextBox id="p_no_casa" label="Número exterior" holder="Número exterior" help="" required={true} maxlength={10} />
+                        <TextBox id="p_apellido_paterno" label="A. Paterno" holder="Apellido paterno" help="" required={true} maxlength={20} />
+                        <TextBox id="p_apellido_materno" label="A. Materno" holder="Apellido materno" help="" required={true} maxlength={20} />
                         <TextBox id="p_direccion" label="Dirección" holder="Dirección" help="" required={true} maxlength={250} />
-
-
-                        <TextBox id="p_referencia" label="Referencia" holder="Referencia" help="" required={true} maxlength={250} />
+                        <TextBox id="p_no_casa" label="Número exterior" holder="Número exterior" help="" required={true} maxlength={10} />
+                        <TextBox id="p_referencias" label="Referencia" holder="Referencia" help="" required={true} maxlength={250} />
                         <TextPhoneNumber id="p_telefono" label="Telefono" holder="Telefono" help="" required={false} />
+                        <ComboBox id="p_id_tipo_inmueble" label="Tipo Inmueble" tabla='tipo_inmueble' value={"id_tipo_inmueble"} description={"descripcion"} ></ComboBox>
+                        <TextTime id="n_disp_hr_ini" label="Inicio de disponibilidad" holder="Inicio de disponibilidad" help="" required={false} />
+                        <TextTime id="n_disp_hr_fin" label="Fin disponibilidad" holder="Fin disponibilidad" help="" required={false} />
+                        <TextBox id="p_coordenadas" label="Coordenadas" holder="Coordenadas" help="" required={true} maxlength={60} />
 
                         <FileInput id="p_foto_ine" label="Foto INE" holder="Foto INE"  ></FileInput>
                         <FileInput id="p_foto_personal" label="Foto Personal" holder="Foto Personal"  ></FileInput>
                         <FileInput id="p_foto_domicilio" label="Foto Domicilio" holder="Foto Domicilio"  ></FileInput>
-
-
-                        <TextEmail id="p_email" label="Correo electrónico" holder="Correo electrónico" help="" required={false} />
-                        <ComboBox id="p_tipo_inmueble" label="Tipo Inmueble" tabla='tipo_inmueble' value={"id_tipo_inmueble"} description={"descripcion"} ></ComboBox>
-
-
-
-
-                        <Title title="DATOS DEL NEGOCIO" />
-
-                        <TextBox id="n_nombre" label="Nombre del Negocio" holder="Nombre del Negocio" help="" required={true} maxlength={100} />
-
-                        <TextBox id="n_referencia" label="Referencia" holder="Referencia" help="" required={true} maxlength={250} />
-
-                        <TextPhoneNumber id="n_telefono" label="Telefono" holder="Telefono" help="" required={false} />
-                        <TextEmail id="n_email" label="Correo electrónico" holder="Correo electrónico" help="" required={false} />
-                        <TextTime id="n_hora_inicio" label="Inicio de disponibilidad" holder="Inicio de disponibilidad" help="" required={false} />
-                        <TextTime id="n_hora_fin" label="Fin disponibilidad" holder="Fin disponibilidad" help="" required={false} />
-                        <TextBox id="n_coordenadas" label="Coordenadas" holder="Coordenadas" help="" required={true} maxlength={100} />
-                        <FileInput id="n_foto" label="Foto Negocio" holder=""  ></FileInput>
-                        <ComboBox id="n_tipo_inmueble" label="Tipo Inmueble" tabla='tipo_inmueble' value={"id_tipo_inmueble"} description={"descripcion"} ></ComboBox>
-                        <ComboBox id="n_tipo_local" label="Tipo Local" tabla='tipo_local' value={"id_tipo_local"} description={"descripcion"} ></ComboBox>
-
-
 
 
 

@@ -99,14 +99,14 @@ class Dashboard extends Component {
                     <Title title="ACCIONES RAPIDAS" />
                     <BtnRounded id='10' src={imgResumen} url="/carteraclientes" label="Resumen" />
                     <BtnRounded id='11' src={imgCobrar} url="/cobrar" label="Cobrar" />
-                    <BtnRounded id='12' src={imgNuevoCredito} url="/nuevocliente" label="Nuevo credito" />
-                    <BtnRounded id='13' src={imgNuevoCliente} url="/nuevocliente" label="Nuevo cliente" />
+                    <BtnRounded id='12' src={imgNuevoCredito} url="/nuevocredito" label="Nueva venta" />
+                    <BtnRounded id='13' src={imgNuevoCliente} url="/nuevocliente" label="Agregar cliente" />
                     <BtnRounded id='14' src={imgCarteraClientes} url="/carteraclientes" label="Cartera de clientes" />
-                    <BtnRounded id='15' src={imgCorteDia} url="/nuevocliente" label="Corte del dia" />
+                    <BtnRounded id='15' src={imgCorteDia} url="/cortedia" label="Corte del dia" />
 
                     <Title title="SEGUIMIENTO" />
                     <BtnRounded id='20' src={imgSolicitudes} url="/nuevocliente" label="Solicitudes" />
-                    <BtnRounded id='21' src={imgSinPagoHoy} url="/nuevocliente" label="Sin pago hoy" />
+                    <BtnRounded id='21' src={imgSinPagoHoy} url="/sinpagohoy" label="Adeudos" />
                     <BtnRounded id='22' src={imgClientesMorosos} url="/nuevocliente" label="Clientes Morosos" />
                     <BtnRounded id='23' src={imgRecuperacion} url="/nuevocliente" label="Recuperación" />
 
@@ -125,9 +125,8 @@ class Dashboard extends Component {
                 this._menu = <div className="row">
                     <BtnRounded id='1' src={imgCarteraClientes} url="/carteraclientes" label="Cartera de clientes" />
                     <BtnRounded id='2' src={imgCobrar} url="/cobrar" label="Cobrar" />
-                    <BtnRounded id='3' src={imgSolicitarDinero} url="/solicitardinero" label="Solicitar dinero" />
-                    <BtnRounded id='4' src={imgEstadoSolicitud} url="/estadosolicitud" label="Estado de solicitudes" />
-                    <BtnRounded id='5' src={imgNuevoCliente} url="/nuevocliente" label="Nuevo cliente" />
+                    <BtnRounded id='12' src={imgNuevoCredito} url="/nuevocredito" label="Nueva venta" />
+                    <BtnRounded id='5' src={imgNuevoCliente} url="/nuevocliente" label="Agregar cliente" />
                 </div>
             } else {
                 this._menu = <div className="row">

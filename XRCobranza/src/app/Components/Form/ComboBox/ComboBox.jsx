@@ -35,7 +35,7 @@ class ComboBox extends Component {
         try {
             if (this._isUpdate == false) {
                 this._isUpdate = true;
-                var url = "http://" + keys.database.host + keys.api.url;
+                var url = "http://" + keys.database.host + ":" + keys.server.port + keys.api.url;
                 if (this.props.tabla != null) {
                     url += this.props.tabla;
                     fetch(url, {
@@ -47,12 +47,12 @@ class ComboBox extends Component {
                         .catch(error => console.error(error))
                         .then(response => {
                             if (this._isMounted) {
-                                this.setState({ 'elementos': response[this.props.tabla] });
+                                this.setState({ 'elementos': response[this.props.tabla] || [] });
                             }
                         });
                 } else {
                     if (this._isMounted) {
-                        this.setState({ 'elementos': this.props.items });
+                        this.setState({ 'elementos': this.props.items || [] });
                     }
                 }
             }
