@@ -6,19 +6,18 @@ CREATE PROCEDURE FILTRAR_CLIENTES(IN filtro VARCHAR(100))
 	
 	
 		-- DECLARACION DE VARIABLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	DECLARE done 								INT DEFAULT FALSE;
-	
+	DECLARE done 						INT DEFAULT FALSE;
 	DECLARE var_ine						VARCHAR(100) DEFAULT "";
-	DECLARE var_nombre 				VARCHAR(100) DEFAULT "";
-	DECLARE var_no_creditos   INT DEFAULT 0;
-	DECLARE var_pagos_total 	INT DEFAULT 0;
-	DECLARE var_no_pagos			DECIMAL(10,2) DEFAULT 0;
-	DECLARE var_no_abonos			INT DEFAULT 0;
-	DECLARE var_no_atrasos		DECIMAL(10,2) DEFAULT 0; 
-	DECLARE var_no_adelantos 	DECIMAL(10,2) DEFAULT 0;
-	DECLARE var_calificacion  DECIMAL(10,2) DEFAULT 0;
-	DECLARE var_extras 				DECIMAL(10,2) DEFAULT 0;
-	DECLARE var_telefono 			VARCHAR(15) DEFAULT "";
+	DECLARE var_nombre 					VARCHAR(100) DEFAULT "";
+	DECLARE var_no_creditos   			INT DEFAULT 0;
+	DECLARE var_pagos_total 			INT DEFAULT 0;
+	DECLARE var_no_pagos				DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_no_abonos				INT DEFAULT 0;
+	DECLARE var_no_atrasos				DECIMAL(10,2) DEFAULT 0; 
+	DECLARE var_no_adelantos 			DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_calificacion  			DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_extras 					DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_telefono 				VARCHAR(15) DEFAULT "";
 	DECLARE var_id_usuario_establecimiento INT DEFAULT 0;
 	
 
@@ -57,11 +56,11 @@ CREATE PROCEDURE FILTRAR_CLIENTES(IN filtro VARCHAR(100))
 		-- TABLA TEMPORAL ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	CREATE TEMPORARY TABLE IF NOT EXISTS tmpClientes ( 
 		ine								VARCHAR(100) NOT NULL PRIMARY KEY,
-		nombre 						VARCHAR(100) NOT NULL,
-		telefono 					VARCHAR(15),
-		no_creditos 			INT,
-		calificacion 			DECIMAL(10,2),
-		id_usuario_establecimiento INT
+		nombre 							VARCHAR(100) NOT NULL,
+		telefono 						VARCHAR(15),
+		no_creditos 					INT,
+		calificacion 					DECIMAL(10,2),
+		id_usuario_establecimiento 		INT
 	); 
 		-- FIN TABLA TEMPORAL ----------------------------------------------------------------------------------------------------------------
 		
