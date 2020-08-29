@@ -1,39 +1,39 @@
 DROP PROCEDURE IF EXISTS COBRO_DIA;
 DELIMITER //
-CREATE PROCEDURE COBRO_DIA(IN var_usuario VARCHAR(100))
+CREATE PROCEDURE COBRO_DIA(IN var_id_ruta VARCHAR(100))
 BEGIN
 
 		-- DECLARACION DE VARIABLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	DECLARE done 								INT DEFAULT FALSE;
 	
-	DECLARE var_folio_credito		VARCHAR(50) DEFAULT "";
-	DECLARE var_id_ruta 				INT DEFAULT 0;
-	DECLARE var_ine 						VARCHAR(100) DEFAULT "";
-	DECLARE var_nombre 					VARCHAR(100) DEFAULT "";
-	DECLARE var_alias 					VARCHAR(60) DEFAULT "";
-	DECLARE var_telefono 				VARCHAR(12) DEFAULT "";
-	DECLARE var_monto_credito 	DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_folio				VARCHAR(50) DEFAULT "";
+	DECLARE var_id_ruta 			INT DEFAULT 0;
+	DECLARE var_ine 				VARCHAR(100) DEFAULT "";
+	DECLARE var_nombre 				VARCHAR(100) DEFAULT "";
+	DECLARE var_alias 				VARCHAR(60) DEFAULT "";
+	DECLARE var_telefono 			VARCHAR(12) DEFAULT "";
+	DECLARE var_monto_credito 		DECIMAL(10,2) DEFAULT 0;
 	DECLARE var_pagos_total 		INT DEFAULT 0;
 	DECLARE var_monto_total 		DECIMAL(10,2) DEFAULT 0;
 	DECLARE var_monto_pago 			DECIMAL(10,2) DEFAULT 0;
-	DECLARE var_fecha_entrega 	DATE DEFAULT "";
-	DECLARE var_pagado 					DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_fecha_entrega 		DATE DEFAULT "";
+	DECLARE var_pagado 				DECIMAL(10,2) DEFAULT 0;
 	DECLARE var_atrasos_no 			DECIMAL(10,2) DEFAULT 0;
-	DECLARE var_atrasos_monto 	DECIMAL(10,2) DEFAULT 0;
-	DECLARE var_extras_no 				DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_atrasos_monto 		DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_extras_no 			DECIMAL(10,2) DEFAULT 0;
 	DECLARE var_extras_monto 		DECIMAL(10,2) DEFAULT 0;
 	DECLARE var_id_estado 			INT DEFAULT 0;
-	DECLARE var_id_estado_credito INT DEFAULT 0;
+	DECLARE var_id_estado_credito 	INT DEFAULT 0;
 	
 	DECLARE var_restante_no 		INT DEFAULT 0;
-	DECLARE var_restante_monto 	DECIMAL(10,2) DEFAULT 0;
-	DECLARE var_restante_total 	DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_restante_monto 		DECIMAL(10,2) DEFAULT 0;
+	DECLARE var_restante_total 		DECIMAL(10,2) DEFAULT 0;
 	DECLARE var_abono_hoy 			DECIMAL(10,2) DEFAULT 0;
 	DECLARE var_id_tipo_pago 		INT DEFAULT 0;
 	DECLARE var_descripcion 		VARCHAR(50) DEFAULT "";
 	
 	DECLARE var_abonos_no 			INT DEFAULT 0;
-	DECLARE var_id_tipo_pago_aux INT DEFAULT 0;
+	DECLARE var_id_tipo_pago_aux 	INT DEFAULT 0;
 
 	
 	-- DECLARACION DEL CURSOR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -47,30 +47,30 @@ BEGIN
 	DEClARE curLista 
 		CURSOR FOR 
 				SELECT 
-					d.folio_credito,
-					d.id_ruta,
-					a.ine, 
-					CONCAT_WS(' ', a.nombre, a.apellido_paterno, a.apellido_materno) AS "nombre", 
-					a.alias, 
-					a.telefono, 
-					b.monto_credito, 
-					b.pagos_total, 
-					(b.monto_pago * b.pagos_total) AS "monto_total", 
-					b.monto_pago, 
-					b.fecha_entrega, 
-					COUNT(IF(c.id_tipo_pago = 4,c.id_tipo_pago,NULL)) AS "atrasos_no", 
-					SUM(IF(c.id_tipo_pago = 4, b.monto_pago,IF(c.id_tipo_pago = 2, b.monto_pago - c.monto, 0))) AS "atrasos_monto",
-					COUNT(IF(c.id_tipo_pago = 3,c.id_tipo_pago,NULL)) AS "extras_no", 
-					SUM(IF(c.id_tipo_pago = 3, c.monto - b.monto_pago, 0)) AS "extras_monto",
-					b.id_estado,
-					b.id_estado_credito
-				FROM credito b
-				INNER JOIN cobro_dia AS d ON d.folio_credito = b.folio_credito 
-				INNER JOIN persona AS a ON a.ine = d.ine 
-				LEFT JOIN abono AS c ON c.folio_credito = d.folio_credito 
+					c.folio,
+					u.id_ruta,
+					u.id_usuario, 
+					CONCAT_WS(' ', p.nombre, p.apellido_paterno, p.apellido_materno) AS "nombre", 
+					p.alias, 
+					p.telefono, 
+					c.monto_credito, 
+					c.total_pagos, 
+					(c.monto_pago * c.total_pagos) AS "monto_total", 
+					c.monto_pago, 
+					c.fecha_entrega, 
+					COUNT(IF(a.id_tipo_pago = 4,a.id_tipo_pago,NULL)) AS "atrasos_no", 
+					SUM(IF(a.id_tipo_pago = 4, c.monto_pago,IF(a.id_tipo_pago = 2, c.monto_pago - a.monto, 0))) AS "atrasos_monto",
+					COUNT(IF(a.id_tipo_pago = 3,a.id_tipo_pago,NULL)) AS "extras_no", 
+					SUM(IF(a.id_tipo_pago = 3, a.monto - c.monto_pago, 0)) AS "extras_monto",
+					c.id_estado
+				FROM credito c
+				INNER JOIN usuario AS u ON c.id_usuario = u.id_usuario
+				INNER JOIN persona AS p ON p.id_persona = u.id_persona
+				LEFT JOIN abono AS a ON a.folio = c.folio
 				
-				WHERE d.id_usuario = var_usuario OR var_usuario = "0"
-				GROUP BY b.folio_credito ORDER BY a.alias;
+				WHERE u.id_ruta = var_id_ruta 
+				GROUP BY c.folio ORDER BY p.alias;
+
 		-- FIN CURSOR -----------------------------------------------------------------------------------------------------------------------
 		
 
