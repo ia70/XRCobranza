@@ -22,6 +22,7 @@ router.get('/', async (req, res) => {
             res.status(400).send({
                 login: false,
                 user: null,
+                id_user: null,
                 rol: null,
                 sucursal: null,
                 hash: null
@@ -40,6 +41,7 @@ router.get('/', async (req, res) => {
             res.status(200).send({
                 login: true,
                 user: usr,
+                id_user: data[0].id_usuario,
                 sucursal: data[0].id_sucursal,
                 rol: data[0].id_rol,
                 hash: hash
