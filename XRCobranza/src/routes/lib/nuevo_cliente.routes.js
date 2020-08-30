@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
         var user = req.body.user;
         
         var data_user = {
-            id_usuario: persona.ine,
+            id_usuario: null,
             id_sucursal: user.sucursal,
             ine: persona.ine,
             password: '12345',
@@ -31,7 +31,6 @@ router.post('/', async (req, res) => {
                 if(aval.nombre != ""){
                     let d_aval = await pool.query('INSERT INTO aval SET ?', [aval]);
                 }
-                let d_est = await pool.query('INSERT INTO usuario_establecimiento SET ?', [establecimiento]);
                 let d_user = await pool.query('INSERT INTO usuario SET ?', [data_user]);
             } else
                 r_d_per = false;
