@@ -40,6 +40,7 @@ class Dashboard extends Component {
         this.state = {
             login: sessionStorage.getItem('login'),
             user: sessionStorage.getItem('user'),
+            id_user: sessionStorage.getItem('id_user'),
             sucursal: sessionStorage.getItem('sucursal'),
             hash: sessionStorage.getItem('hash'),
             rol: sessionStorage.getItem('rol')
