@@ -53,6 +53,7 @@ class Login extends Component {
                         if (response.hash != null) {
                             sessionStorage.setItem('login', response.login);
                             sessionStorage.setItem('user', response.user);
+                            sessionStorage.setItem('id_user', response.id_user);
                             sessionStorage.setItem('rol', response.rol);
                             sessionStorage.setItem('sucursal', response.sucursal);
                             sessionStorage.setItem('hash', response.hash);
@@ -71,6 +72,7 @@ class Login extends Component {
         if (sessionStorage.getItem('login') == 'null' || sessionStorage.getItem('login') == null) {
             sessionStorage.setItem('login', "");
             sessionStorage.setItem('user', "");
+            sessionStorage.setItem('id_user', "");
             sessionStorage.setItem('rol', "");
             sessionStorage.setItem('sucursal', "");
             sessionStorage.setItem('hash', "");
