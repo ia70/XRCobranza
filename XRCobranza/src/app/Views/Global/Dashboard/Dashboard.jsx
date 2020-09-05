@@ -27,6 +27,10 @@ import imgNuevoCliente from '../../../img/NuevoUsuario.png';
 import imgSolicitarDinero from '../../../img/SolicitarDinero.png';
 import Logo from '../../../img/Logo.png';
 
+// SECURITY  --------------------------------
+const keys = require('../../../../keys');
+const cipher = require('../../../../cipher');
+
 // CSS
 import './Dashboard.css';
 
@@ -35,36 +39,31 @@ class Dashboard extends Component {
         super(props);
 
         this._menu = "";
+        this._is_mounted = false;
         sessionStorage.setItem('route', 'dashboard');
 
         this.state = {
-            login: sessionStorage.getItem('login'),
-            user: sessionStorage.getItem('user'),
-            id_user: sessionStorage.getItem('id_user'),
-            sucursal: sessionStorage.getItem('sucursal'),
-            hash: sessionStorage.getItem('hash'),
-            rol: sessionStorage.getItem('rol')
+            _global: (sessionStorage.getItem('oVlrXrrt') != null ? JSON.parse(cipher.decode(keys.security.client_password, sessionStorage.getItem('oVlrXrrt'))) : [])
         };
 
         this.handleEvento = this.handleEvento.bind(this);
     }
 
     handleEvento() {
-        var opcion = confirm("¿Desea cerrar sesión?");
-        if (opcion == true) {
-            sessionStorage.clear();
-            this.setState({ login: false });
+        if (this._is_mounted) {
+            var opcion = confirm("¿Desea cerrar sesión?");
+            if (opcion == true) {
+                sessionStorage.clear();
+            }
         }
-
     }
 
     componentWillMount() {
-        if (!sessionStorage.getItem('login') == true) {
+        if (this.state._global.hash == null) {
             sessionStorage.clear();
             alert('¡Sesion bloqueada!');
-            this.setState({ login: false });
         } else {
-            if (this.state.rol == 1) {
+            if (this.state._global.id_rol == 1) {
                 this._menu = <div className="row">
                     <Title title="ACCIONES RAPIDAS" />
                     <BtnRounded id='10' src={imgResumen} url="/carteraclientes" label="Resumen" />
@@ -95,7 +94,7 @@ class Dashboard extends Component {
                     }
 
                 </div>
-            } else if (this.state.rol == 4) {
+            } else if (this.state._global.id_rol == 4) {
                 this._menu = <div className="row">
                     <Title title="ACCIONES RAPIDAS" />
                     <BtnRounded id='10' src={imgResumen} url="/carteraclientes" label="Resumen" />
@@ -122,7 +121,7 @@ class Dashboard extends Component {
                     <BtnRounded id='37' src={imgCarteraClientes} url="/carteraclientes" label="Configuración" />
 
                 </div>
-            } else if (this.state.rol == 2) {
+            } else if (this.state._global.id_rol == 2) {
                 this._menu = <div className="row">
                     <BtnRounded id='1' src={imgCarteraClientes} url="/carteraclientes" label="Cartera de clientes" />
                     <BtnRounded id='2' src={imgCobrar} url="/cobrar" label="Cobrar" />
@@ -136,6 +135,10 @@ class Dashboard extends Component {
                 </div>
             }
         }
+    }
+
+    componentDidMount() {
+        this._is_mounted = true;
     }
 
     render() {
