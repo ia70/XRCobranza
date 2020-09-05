@@ -8,8 +8,9 @@ import { TextPassword } from '../../../Components/Form/TextPassword/TextPassword
 import { BtnSubmit } from '../../../Components/Form/BtnSubmit/BtnSubmit.jsx';
 import './Login.css';
 
+// SECURITY  --------------------------------
 const keys = require('../../../../keys');
-const enc = require('../../../../cipher');
+const cipher = require('../../../../cipher');
 
 
 //PROPIEDADES ------------------------------
@@ -38,8 +39,8 @@ class Login extends Component {
 
                 var url = "http://" + keys.database.host + ":" + keys.server.port + keys.api.url + 'login';
                 let data_text = {
-                    usr: enc.encode(keys.security.client_password, usuario),
-                    pwd: enc.encode(keys.security.client_password, password)
+                    usr: cipher.encode(keys.security.client_password, usuario),
+                    pwd: cipher.encode(keys.security.client_password, password)
                 };
 
                 fetch(url, {
@@ -54,7 +55,7 @@ class Login extends Component {
                     })
                     .then(response => {
                         let respuesta = response.oVlrXrrt;
-                        let desEncriptado = enc.decode(keys.security.client_password, respuesta);
+                        let desEncriptado = cipher.decode(keys.security.client_password, respuesta);
                         let res_obj = JSON.parse(desEncriptado);
 
                         if (res_obj.hash != null) {
@@ -74,7 +75,7 @@ class Login extends Component {
     componentWillMount() {
         try {
             if (sessionStorage.getItem('oVlrXrrt') != null) {
-                this.setState({ _global: JSON.parse(enc.decode(keys.security.client_password, sessionStorage.getItem('oVlrXrrt'))) });
+                this.setState({ _global: JSON.parse(cipher.decode(keys.security.client_password, sessionStorage.getItem('oVlrXrrt'))) });
             }
         } catch (error) {
            console.error('Error:', error);
