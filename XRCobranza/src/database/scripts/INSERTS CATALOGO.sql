@@ -92,5 +92,5 @@ INSERT INTO tipo_parentesco VALUES(DEFAULT, "Otro...");
 
 
 -- USUARIO ------------------------------------------------
-INSERT INTO persona VALUES(DEFAULT, "I01", "Administrador", "Daniel", "Pérez", "C", "Comalcalco", NULL, NULL, "9141198098", 1, NULL, NULL, NULL, NULL, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES(DEFAULT, "xcoru", "@xcoru12345", 1, NULL, 4, NULL, NULL, 1, "2020-08-23");
+INSERT INTO persona VALUES(DEFAULT, "I01", "Administrador", "Daniel", "Pérez", "C", "Comalcalco", NULL, NULL, "9141198098", 1, NULL, NULL, NULL, NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES(DEFAULT, "xcoru", "@xcoru12345", 1, NULL, 4, NULL, NULL, NULL, 1, "2020-08-23");
