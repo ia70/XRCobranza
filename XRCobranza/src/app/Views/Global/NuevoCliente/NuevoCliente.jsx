@@ -13,7 +13,6 @@ import keys from '../../../../keys';
 import { getDateTime } from '../../../../lib/util';
 
 import Logo from '../../../img/Logo.png';
-import { MultiCompiler } from 'webpack';
 
 class NuevoCliente extends Component {
 
@@ -27,7 +26,8 @@ class NuevoCliente extends Component {
             login: sessionStorage.getItem('login'),
             user: sessionStorage.getItem('user'),
             id_user: sessionStorage.getItem('id_user'),
-            sucursal: sessionStorage.getItem('sucursal'),
+            id_empresa: sessionStorage.getItem('empresa'),
+            id_sucursal: sessionStorage.getItem('sucursal'),
             hash: sessionStorage.getItem('hash'),
             rol: sessionStorage.getItem('rol'),
             filtro: [],
@@ -145,12 +145,14 @@ class NuevoCliente extends Component {
                                     apellido_materno: document.getElementById('a_amaterno').value,
                                     direccion: document.getElementById('a_direccion').value,
                                     telefono: document.getElementById('a_telefono').value,
-                                    id_tipo_parentesco: document.getElementById('a_id_tipo_parentesco').value
+                                    id_tipo_parentesco: document.getElementById('a_id_tipo_parentesco').value,
+                                    fecha_reg: getDateTime()
                                 },
                                 user: {
                                     user: this.state.user,
                                     id_user: this.state.id_user,
-                                    sucursal: this.state.sucursal,
+                                    id_empresa: 1,
+                                    id_sucursal: 1,
                                     hash: this.state.hash,
                                     rol: this.state.rol
                                 }
