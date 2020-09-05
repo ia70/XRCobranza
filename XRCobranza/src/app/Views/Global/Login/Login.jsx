@@ -23,9 +23,7 @@ class Login extends Component {
         this._isMounted = false;
 
         this.state = {
-            login: null,
-            user: null,
-            hash: null
+            _global: []
         };
 
         this.enviar = this.enviar.bind(this);
@@ -38,29 +36,34 @@ class Login extends Component {
 
             if (usuario.length > 0 && password.length > 0) {
 
-                var e_user = encodeURIComponent(enc.encode(keys.security.client_password, usuario));
-                var e_pass = encodeURIComponent(enc.encode(keys.security.client_password, password));
+                var url = "http://" + keys.database.host + ":" + keys.server.port + keys.api.url + 'login';
+                let data_text = {
+                    usr: enc.encode(keys.security.client_password, usuario),
+                    pwd: enc.encode(keys.security.client_password, password)
+                };
 
-                var url = "http://"+ keys.database.host + ":" +keys.server.port + keys.api.url + 'login?usr=' + e_user + '&pwd=' + e_pass;
                 fetch(url, {
-                    method: 'GET',
+                    method: 'POST',
+                    body: JSON.stringify(data_text),
                     headers: {
                         'Content-Type': 'application/json'
                     }
                 }).then(res => res.json())
-                    .catch(error => console.error(error))
+                    .catch(error => {
+                        console.error('Error:', error);
+                    })
                     .then(response => {
-                        if (response.hash != null) {
-                            sessionStorage.setItem('login', response.login);
-                            sessionStorage.setItem('user', response.user);
-                            sessionStorage.setItem('id_user', response.id_user);
-                            sessionStorage.setItem('rol', response.rol);
-                            sessionStorage.setItem('sucursal', response.sucursal);
-                            sessionStorage.setItem('hash', response.hash);
-                        }else{
+                        let respuesta = response.oVlrXrrt;
+                        let desEncriptado = enc.decode(keys.security.client_password, respuesta);
+                        let res_obj = JSON.parse(desEncriptado);
+
+                        if (res_obj.hash != null) {
+                            sessionStorage.setItem('oVlrXrrt', respuesta);
+                            this.setState({ _global: res_obj });
+                        } else {
                             alert("Datos incorrectos!");
                         }
-                        this.setState(response);
+
                     });
             } else {
                 alert("Es necesario llenar los campos!");
@@ -69,15 +72,14 @@ class Login extends Component {
     }
 
     componentWillMount() {
-        if (sessionStorage.getItem('login') == 'null' || sessionStorage.getItem('login') == null) {
-            sessionStorage.setItem('login', "");
-            sessionStorage.setItem('user', "");
-            sessionStorage.setItem('id_user', "");
-            sessionStorage.setItem('rol', "");
-            sessionStorage.setItem('sucursal', "");
-            sessionStorage.setItem('hash', "");
-            sessionStorage.setItem('route', "dashboard");
+        try {
+            if (sessionStorage.getItem('oVlrXrrt') != null) {
+                this.setState({ _global: JSON.parse(enc.decode(keys.security.client_password, sessionStorage.getItem('oVlrXrrt'))) });
+            }
+        } catch (error) {
+           console.error('Error:', error);
         }
+
     }
 
     componentDidMount() {
@@ -85,15 +87,23 @@ class Login extends Component {
     }
 
     render() {
-        if (this.state.login == true || this.state.login == 'true' || sessionStorage.getItem('login') == 'true') {
-            var ruta = "/" + sessionStorage.getItem('route');
+        if (this.state._global.hash != null) {
+            let _ruta =  sessionStorage.getItem('route');
+            let ruta = "";
+            if(_ruta != null){
+                ruta = _ruta;
+            }else{
+                ruta = "dashboard"
+            }
             return (
                 <Redirect
                     from="/"
                     to={ruta} />
             );
-        } else if (this.login == false || this.login == 'false')
-            alert("Datos incorrectos!");
+        } else if (this._isMounted && this.state._global.id_usuario == null) {
+            //alert("Datos incorrectos!");
+        }
+
         return (
             <div className="contenedor" >
                 <div className="column p-0 justify-content-center login login_body">
