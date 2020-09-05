@@ -10,7 +10,8 @@ CREATE PROCEDURE LOGIN(IN usuario VARCHAR(50), IN pass VARCHAR(100))
 			u.id_empresa, 
 			u.id_sucursal, 
 			c.id_moneda, 
-			c.id_zona_horaria
+			c.id_zona_horaria,
+			IF(u.id_rol = 4, 1000, IF(DATEDIFF( c.licencia_fin, CURDATE()) > 0, DATEDIFF( c.licencia_fin, CURDATE()) ,0)) AS "dias_restantes"
 		FROM usuario u
 		LEFT JOIN persona AS p ON u.id_persona = p.id_persona
 		LEFT JOIN empresa AS e ON e.id_empresa = u.id_empresa
@@ -18,7 +19,7 @@ CREATE PROCEDURE LOGIN(IN usuario VARCHAR(50), IN pass VARCHAR(100))
 		LEFT JOIN configuracion AS c ON u.id_empresa = c.id_empresa
 
 		WHERE u.usuario = usuario AND u.password = pass 
-		AND (u.id_estado = 1 AND p.id_estado = 1 AND e.id_estado = 1 
-		AND (s.id_estado = 1 OR u.id_rol = 1) AND c.licencia_fin >= CURDATE() OR u.id_rol = 4);
+		AND (u.id_estado = 1 AND p.id_estado = 1 AND (e.id_estado = 1 OR u.id_rol = 4)
+		AND (s.id_estado = 1 OR u.id_rol = 1 OR u.id_rol = 4));
 	END //
 DELIMITER ;
