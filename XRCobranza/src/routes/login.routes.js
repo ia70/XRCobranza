@@ -24,20 +24,21 @@ router.post('/', async (req, res) => {
         id_ruta: null,
         id_moneda: null,
         id_zona_horaria: null,
+        dias_restantes: null,
         hash: null
     };
 
     try {
         let data = await pool.query('CALL LOGIN(?, ?)', [usr, pwd]);
 
-        if (JSON.stringify(data) == '[]') {
+        if (JSON.stringify(data) == '[]' || JSON.stringify(data) == "" || JSON.stringify(data) == null) {
             res.status(400).send({
                 oVlrXrrt: cipher.encode(keys.security.client_password, JSON.stringify(_global))
             });
         } else {
             var id = fecha() + '_' + usr;
             var hash = cipher.encode(keys.security.client_password, id);
-            var sucu = (data[0].id_sucursal != null ? data[0].id_sucursal : 0);
+            var sucu = (data[0][0].id_sucursal != null ? data[0][0].id_sucursal : 0);
 
             try {
                 login(hash, usr, sucu);
@@ -54,7 +55,8 @@ router.post('/', async (req, res) => {
                 id_ruta: data[0][0].id_ruta,
                 id_moneda: data[0][0].id_moneda,
                 id_zona_horaria: data[0][0].id_zona_horaria,
-                hash: hash
+                dias_restantes: data[0][0].dias_restantes,
+                hash: (data[0][0].dias_restantes > 0 ? hash : null)
             };
 
             res.status(200).send({
