@@ -1,16 +1,16 @@
 -- PERSONA - USUARIO ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-INSERT INTO persona VALUES(DEFAULT, "I02", "Cobrador", "Elias", "Ovando", "Caña", "Comalcalco", NULL, NULL, "9934521890", 1, NULL, NULL, NULL, NULL, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES(DEFAULT, "U02", "12345", 2, NULL, 2, 1, 1, 1, "2020-08-23");
+INSERT INTO persona VALUES(DEFAULT, "I02", "Cobrador", "Elias", "Ovando", "Caña", "Comalcalco", NULL, NULL, "9934521890", 1, NULL, NULL, NULL, NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES(DEFAULT, "U02", "12345", 2, NULL, 2, 1, 1, 1, 1, "2020-08-23");
 
-INSERT INTO persona VALUES(DEFAULT, "I03", "Vende tacos", "Sara", "Laines", "Lopez", "Comalcalco", NULL, NULL, "9334521587", 1, NULL, NULL, NULL, NULL, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES(DEFAULT, "U03", "12345", 3, NULL, 3, 1, 1, 1, "2020-08-23");
+INSERT INTO persona VALUES(DEFAULT, "I03", "Vende tacos", "Sara", "Laines", "Lopez", "Comalcalco", NULL, NULL, "9334521587", 1, NULL, NULL, NULL, NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES(DEFAULT, "U03", "12345", 3, NULL, 3, 1, 1, 1, 1, "2020-08-23");
 
-INSERT INTO persona VALUES(DEFAULT, "I04", "Salbutes canul", "Eduardo", "Canul", "Arias", "Comalcalco", NULL, NULL, "9339852365", 1, NULL, NULL, NULL, NULL, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES(DEFAULT, "U04", "12345", 4, NULL, 3, 1, 1, 1, "2020-08-23");
+INSERT INTO persona VALUES(DEFAULT, "I04", "Salbutes canul", "Eduardo", "Canul", "Arias", "Comalcalco", NULL, NULL, "9339852365", 1, NULL, NULL, NULL, NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES(DEFAULT, "U04", "12345", 4, NULL, 3, 1, 1, 1, 1, "2020-08-23");
 
-INSERT INTO persona VALUES(DEFAULT, "I05", "Guero Zapatos", "Marcos", "Carrillo", "Jimenez", "Comalcalco", NULL, NULL, "9334568130", 1, NULL, NULL, NULL, NULL, 1, 1, "2020-08-23");
-INSERT INTO usuario VALUES(DEFAULT, "U05", "12345", 5, NULL, 3, 1, 1, 1, "2020-08-23");
+INSERT INTO persona VALUES(DEFAULT, "I05", "Guero Zapatos", "Marcos", "Carrillo", "Jimenez", "Comalcalco", NULL, NULL, "9334568130", 1, NULL, NULL, NULL, NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES(DEFAULT, "U05", "12345", 5, NULL, 3, 1, 1, 1, 1, "2020-08-23");
 
 
 -- RUTAS -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
