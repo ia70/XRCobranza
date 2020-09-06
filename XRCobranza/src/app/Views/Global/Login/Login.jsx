@@ -60,9 +60,16 @@ class Login extends Component {
 
                         if (res_obj.hash != null) {
                             sessionStorage.setItem('oVlrXrrt', respuesta);
+                            if(res_obj.dias_restantes > 0 && res_obj.dias_restantes <=5){
+                                alert("La licencia caduca en " + res_obj.dias_restantes + " dias!");
+                            }
                             this.setState({ _global: res_obj });
                         } else {
-                            alert("Datos incorrectos!");
+                            if(res_obj.dias_restantes == 0 && res_obj.id_usuario != null){
+                                alert("Licencia caducada!");
+                            }else {
+                                alert("Datos incorrectos!");
+                            }
                         }
 
                     });
