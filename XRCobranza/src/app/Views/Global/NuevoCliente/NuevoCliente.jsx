@@ -14,22 +14,23 @@ import { getDateTime } from '../../../../lib/util';
 
 import Logo from '../../../img/Logo.png';
 
+
+// SECURITY  --------------------------------
+const keys = require('../../../../keys');
+const cipher = require('../../../../cipher');
+
+
 class NuevoCliente extends Component {
 
     constructor(props) {
         super(props);
 
+        this._is_mounted = false;
         this._cargando = false;
         sessionStorage.setItem('route', 'nuevocliente');
 
         this.state = {
-            login: sessionStorage.getItem('login'),
-            user: sessionStorage.getItem('user'),
-            id_user: sessionStorage.getItem('id_user'),
-            id_empresa: sessionStorage.getItem('empresa'),
-            id_sucursal: sessionStorage.getItem('sucursal'),
-            hash: sessionStorage.getItem('hash'),
-            rol: sessionStorage.getItem('rol'),
+            _global: (sessionStorage.getItem('oVlrXrrt') != null ? JSON.parse(cipher.decode(keys.security.client_password, sessionStorage.getItem('oVlrXrrt'))) : []),
             filtro: [],
             cliente: []
         };
@@ -48,10 +49,7 @@ class NuevoCliente extends Component {
                     var url = "http://" + keys.database.host + ":" + keys.server.port + keys.api.url + 'persona/filtrar_clientes';
 
                     var data_text = {
-                        user: this.state.user,
-                        id_user: this.state.id_user,
-                        sucursal: this.state.sucursal,
-                        hash: this.state.hash,
+                        _global: this.state._global,
                         filtro: cadena
                     };
 
@@ -112,11 +110,11 @@ class NuevoCliente extends Component {
                                     ine: document.getElementById('p_ine').value,
                                     alias: document.getElementById('p_alias').value,
                                     nombre: document.getElementById('p_nombre').value,
-                                    apellido_paterno: document.getElementById('p_apaterno').value,
-                                    apellido_materno: document.getElementById('p_amaterno').value,
+                                    apellido_paterno: document.getElementById('p_apellido_paterno').value,
+                                    apellido_materno: document.getElementById('p_apelllido_materno').value,
                                     direccion: document.getElementById('p_direccion').value,
                                     no_casa: document.getElementById('p_no_casa').value,
-                                    referencias: document.getElementById('p_referencia').value,
+                                    referencias: document.getElementById('p_referencias').value,
                                     telefono: document.getElementById('p_telefono').value,
                                     id_tipo_inmueble: document.getElementById('p_tipo_inmueble').value,
                                     disp_hr_ini: document.getElementById('p_disp_hr_ini').value,
@@ -184,7 +182,7 @@ class NuevoCliente extends Component {
                             alert("¡Seleccione la ruta!");
                         }
                     }
-                    this._cargando = false;
+                this._cargando = false;
             }
         } catch (error) {
             this._cargando = false;
@@ -193,11 +191,14 @@ class NuevoCliente extends Component {
     }
 
     componentWillMount() {
-        if (!sessionStorage.getItem('login') == 'true') {
+        if (this.state._global.hash == null) {
             sessionStorage.clear();
             alert('¡Sesion bloqueada!');
-            this.setState({ login: false });
         }
+    }
+
+    componentDidMount() {
+        this._is_mounted = true;
     }
 
     render() {
