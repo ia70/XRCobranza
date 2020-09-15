@@ -9,7 +9,6 @@ import TextSearchExt from '../../../Components/Form/TextSearchExt/TextSearchExt.
 import { BtnSubmit } from '../../../Components/Form/BtnSubmit/BtnSubmit.jsx';
 import ComboBox from '../../../Components/Form/ComboBox/ComboBox.jsx';
 import { FileInput } from '../../../Components/Form/FileInput/FileInput.jsx';
-import keys from '../../../../keys';
 import { getDateTime } from '../../../../lib/util';
 
 import Logo from '../../../img/Logo.png';
@@ -104,57 +103,57 @@ class NuevoCliente extends Component {
                     if (ruta != null) {
                         if (ruta != "0") {
                             var url = "http://" + keys.database.host + keys.api.url + 'nuevo_cliente';
-
-                            var data_text = {
-                                persona: {
-                                    ine: document.getElementById('p_ine').value,
-                                    alias: document.getElementById('p_alias').value,
-                                    nombre: document.getElementById('p_nombre').value,
-                                    apellido_paterno: document.getElementById('p_apellido_paterno').value,
-                                    apellido_materno: document.getElementById('p_apelllido_materno').value,
-                                    direccion: document.getElementById('p_direccion').value,
-                                    no_casa: document.getElementById('p_no_casa').value,
-                                    referencias: document.getElementById('p_referencias').value,
-                                    telefono: document.getElementById('p_telefono').value,
-                                    id_tipo_inmueble: document.getElementById('p_tipo_inmueble').value,
-                                    disp_hr_ini: document.getElementById('p_disp_hr_ini').value,
-                                    disp_hr_fin: document.getElementById('p_disp_hr_fin').value,
-                                    coordenadas: document.getElementById('p_coordenadas').value,
-                                    clave_media: null,
-                                    id_estado: 1,
-                                    fecha_reg: getDateTime()
-                                },
-                                usuario: {
-                                    usuario: document.getElementById('p_ine').value,
-                                    password: "12345",
-                                    id_persona: null,
-                                    usuario_padre: this.state.id_user,
-                                    id_rol: 3,
-                                    id_ruta: document.getElementById('p_id_ruta').value,
-                                    id_empresa: 1,
-                                    id_sucursal: 1,
-                                    id_estado: 1,
-                                    fecha_reg: getDateTime()
-                                },
-                                aval: {
-                                    ine: document.getElementById('p_ine').value,
-                                    nombre: document.getElementById('a_nombre').value,
-                                    apellido_paterno: document.getElementById('a_apaterno').value,
-                                    apellido_materno: document.getElementById('a_amaterno').value,
-                                    direccion: document.getElementById('a_direccion').value,
-                                    telefono: document.getElementById('a_telefono').value,
-                                    id_tipo_parentesco: document.getElementById('a_id_tipo_parentesco').value,
-                                    fecha_reg: getDateTime()
-                                },
-                                user: {
-                                    user: this.state.user,
-                                    id_user: this.state.id_user,
-                                    id_empresa: 1,
-                                    id_sucursal: 1,
-                                    hash: this.state.hash,
-                                    rol: this.state.rol
-                                }
-                            };
+                            var data_text = [];
+                            try {
+                                data_text = {
+                                    persona: {
+                                        ine: (document.getElementById('p_ine').value != null ? document.getElementById('p_ine').value : ""),
+                                        alias: (document.getElementById('p_alias').value != null ? document.getElementById('p_alias').value : ""),
+                                        nombre: (document.getElementById('p_nombre').value != null ? document.getElementById('p_nombre').value : ""),
+                                        apellido_paterno: (document.getElementById('p_apellido_paterno').value != null ? document.getElementById('p_apellido_paterno').value : ""),
+                                        apellido_materno: (document.getElementById('p_apellido_materno').value != null ? document.getElementById('p_apellido_materno').value : ""),
+                                        direccion: (document.getElementById('p_direccion').value != null ? document.getElementById('p_direccion').value : ""),
+                                        no_casa: (document.getElementById('p_no_casa').value != null ? document.getElementById('p_no_casa').value : ""),
+                                        referencias: (document.getElementById('p_referencias').value != null ? document.getElementById('p_referencias').value : ""),
+                                        telefono: (document.getElementById('p_telefono').value != null ? document.getElementById('p_telefono').value : ""),
+                                        id_tipo_inmueble: (document.getElementById('p_id_tipo_inmueble').value != null ? document.getElementById('p_id_tipo_inmueble').value : ""),
+                                        disp_hr_ini: (document.getElementById('p_disp_hr_ini').value != null ? document.getElementById('p_disp_hr_ini').value : ""),
+                                        disp_hr_fin: (document.getElementById('p_disp_hr_fin').value != null ? document.getElementById('p_disp_hr_fin').value : ""),
+                                        coordenadas: (document.getElementById('p_coordenadas').value != null ? document.getElementById('p_coordenadas').value : ""),
+                                        clave_media: null,
+                                        id_estado: 1,
+                                        fecha_reg: getDateTime()
+                                    },
+                                    aval: {
+                                        ine: (document.getElementById('p_ine').value != null ? document.getElementById('p_ine').value : ""),
+                                        nombre: (document.getElementById('a_nombre').value != null ? document.getElementById('a_nombre').value : ""),
+                                        apellido_paterno: (document.getElementById('a_apellido_paterno').value != null ? document.getElementById('a_apellido_paterno').value : ""),
+                                        apellido_materno: (document.getElementById('a_apellido_materno').value != null ? document.getElementById('a_apellido_materno').value : ""),
+                                        direccion: (document.getElementById('a_direccion').value != null ? document.getElementById('a_direccion').value : ""),
+                                        telefono: (document.getElementById('a_telefono').value != null ? document.getElementById('a_telefono').value : ""),
+                                        id_tipo_parentesco: (document.getElementById('a_id_tipo_parentesco').value != null ? document.getElementById('a_id_tipo_parentesco').value : ""),
+                                        fecha_reg: getDateTime()
+                                    },
+                                    usuario: {
+                                        usuario: (document.getElementById('p_ine').value != null ? document.getElementById('p_ine').value : ""),
+                                        password: "12345",
+                                        id_persona: null,
+                                        usuario_padre: this.state._global.id_usuario,
+                                        id_rol: 3,
+                                        id_ruta: (document.getElementById('p_id_ruta').value != null ? document.getElementById('p_id_ruta').value : ""),
+                                        id_empresa: this.state._global.id_empresa,
+                                        id_sucursal: this.state._global.id_sucursal,
+                                        id_estado: 1,
+                                        fecha_reg: getDateTime()
+                                    },
+                                    _global: {
+                                        data: (sessionStorage.getItem('oVlrXrrt') != null ? sessionStorage.getItem('oVlrXrrt') : [])
+                                    }
+                                };
+                            } catch (error) {
+                                data_text = [];
+                                console.log(error);
+                            }
 
                             fetch(url, {
                                 method: 'POST',
@@ -230,8 +229,8 @@ class NuevoCliente extends Component {
                         <TextBox id="p_referencias" label="Referencia" holder="Referencia" help="" required={true} maxlength={250} />
                         <TextPhoneNumber id="p_telefono" label="Telefono" holder="Telefono" help="" required={false} />
                         <ComboBox id="p_id_tipo_inmueble" label="Tipo Inmueble" tabla='tipo_inmueble' value={"id_tipo_inmueble"} description={"descripcion"} ></ComboBox>
-                        <TextTime id="n_disp_hr_ini" label="Inicio de disponibilidad" holder="Inicio de disponibilidad" help="" required={false} />
-                        <TextTime id="n_disp_hr_fin" label="Fin disponibilidad" holder="Fin disponibilidad" help="" required={false} />
+                        <TextTime id="p_disp_hr_ini" label="Inicio de disponibilidad" holder="Inicio de disponibilidad" help="" required={false} />
+                        <TextTime id="p_disp_hr_fin" label="Fin disponibilidad" holder="Fin disponibilidad" help="" required={false} />
                         <TextBox id="p_coordenadas" label="Coordenadas" holder="Coordenadas" help="" required={true} maxlength={60} />
 
                         <FileInput id="p_foto_ine" label="Foto INE" holder="Foto INE"  ></FileInput>
@@ -245,6 +244,7 @@ class NuevoCliente extends Component {
                         <TextSearchExt id="a_search" label="Buscar" evento={this.filtrar} />
                         <ComboBox id="a_listaclientes" label="Cliente" items={this.state.filtro} value={"ine"} description={"nombre"} evento={this.leer} />
 
+                        <TextBox id="a_ine" label="INE" holder="INE" help="" required={true} maxlength={20} />
                         <TextBox id="a_nombre" label="Nombre" holder="Nombre del cliente" help="" required={true} maxlength={50} />
                         <TextBox id="a_apellido_paterno" label="A. Paterno" holder="Apellido paterno" help="" required={true} maxlength={20} />
                         <TextBox id="a_apellido_materno" label="A. Materno" holder="Apellido materno" help="" required={true} maxlength={20} />
