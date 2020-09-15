@@ -12,6 +12,9 @@ INSERT INTO usuario VALUES(DEFAULT, "U04", "12345", 4, NULL, 3, 1, 1, 1, 1, "202
 INSERT INTO persona VALUES(DEFAULT, "I05", "Guero Zapatos", "Marcos", "Carrillo", "Jimenez", "Comalcalco", NULL, NULL, "9334568130", 1, NULL, NULL, NULL, NULL, 1, "2020-08-23");
 INSERT INTO usuario VALUES(DEFAULT, "U05", "12345", 5, NULL, 3, 1, 1, 1, 1, "2020-08-23");
 
+INSERT INTO persona VALUES(DEFAULT, "I06", "Administrador", "Daniel", "Pérez", "C", "Comalcalco", NULL, NULL, "9334568130", 1, NULL, NULL, NULL, NULL, 1, "2020-08-23");
+INSERT INTO usuario VALUES(DEFAULT, "admin", "12345", 6, NULL, 1, 1, 1, 1, 1, "2020-08-23");
+
 
 -- RUTAS -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
