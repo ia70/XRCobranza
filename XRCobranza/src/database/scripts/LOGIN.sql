@@ -23,3 +23,17 @@ CREATE PROCEDURE LOGIN(IN usuario VARCHAR(50), IN pass VARCHAR(100))
 		AND (s.id_estado = 1 OR u.id_rol = 1 OR u.id_rol = 4));
 	END //
 DELIMITER ;
+
+/*
+
+id_usuario
+nombre
+id_rol
+id_ruta
+id_empresa
+id_sucursal
+id_moneda
+id_zona_horaria
+dias_restantes
+
+*/
