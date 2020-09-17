@@ -57,7 +57,7 @@ app.use('/api/cobrar',                  require('./routes/lib/cobrar.routes'));
 app.use('/api/cobrar_pago',             require('./routes/lib/cobrar_pago.routes'));
 app.use('/api/nuevo_credito',           require('./routes/lib/nuevo_credito.routes'));
 app.use('/api/cobro_dia_corte',         require('./routes/lib/cobro_dia_corte.routes'));
-app.use('/api/clientes_no_pago',         require('./routes/lib/clientes_no_pago.routes'));
+app.use('/api/clientes_no_pago',        require('./routes/lib/clientes_no_pago.routes'));
 app.use('/api/tipo_parentesco',         require('./routes/tipo_parentesco.routes'));
 
 // Static files --------------------------------------------------
