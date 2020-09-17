@@ -10,8 +10,8 @@ router.post('/', async (req, res) => {
     try {
         var persona = req.body.persona;
         var aval = req.body.aval;
-        var establecimiento = req.body.establecimiento;
-        var user = req.body.user;
+        var usuario = req.body.usuario;
+        var _global = req.body._global.data;
         
         var data_user = {
             id_usuario: null,
