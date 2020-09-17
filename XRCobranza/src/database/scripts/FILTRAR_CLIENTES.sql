@@ -29,10 +29,15 @@ CREATE PROCEDURE FILTRAR_CLIENTES(IN filtro VARCHAR(100))
 	DEClARE curLista 
 		CURSOR FOR 
 						SELECT 
-							a.ine, 
-							concat_ws(' ',a.alias, " - ", a.nombre, a.apellido_paterno, a.apellido_materno) AS "nombre",
-							COUNT(c.ine) AS "no_creditos",
-							SUM(c.pagos_total) AS "pagos_total",
+							u.id_usuario
+							p.ine,
+							p.alias,
+							p.nombre,
+							p.apellido_paterno,
+							p.apellido_materno,
+
+							SUM(IF(c.id_estado <= 2, 1, 0)) AS "no_creditos",
+							SUM(a.pagos_total) AS "pagos_total",
 							SUM(c.no_pagos) AS "no_pagos",
 							SUM(c.no_abonos) AS "no_abonos",
 							SUM(c.no_atrasos) AS "no_atrasos",
