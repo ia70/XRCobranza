@@ -1,11 +1,11 @@
 -- ESTADO -------------------------------------------------------
 
 INSERT INTO estado VALUES(DEFAULT, "Activo");
+INSERT INTO estado VALUES(DEFAULT, "Terminado");
 INSERT INTO estado VALUES(DEFAULT, "Inactivo");
-INSERT INTO estado VALUES(DEFAULT, "Eliminado");
 INSERT INTO estado VALUES(DEFAULT, "Congelado");
 INSERT INTO estado VALUES(DEFAULT, "Condonado");
-INSERT INTO estado VALUES(DEFAULT, "Terminado");
+INSERT INTO estado VALUES(DEFAULT, "Eliminado");
 
 
 -- MONEDA -------------------------------------------------------
