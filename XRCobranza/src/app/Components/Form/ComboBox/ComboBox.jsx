@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import keys from '../../../../keys';
+
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 //PROPIEDADES -----------------------
 /*
     - id            Identificador único para cada componente

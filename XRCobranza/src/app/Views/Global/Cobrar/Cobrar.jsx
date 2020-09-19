@@ -6,9 +6,13 @@ import Navbar from '../../../Components/Content/Navbar/Navbar.jsx';
 import { ItemList } from '../../../Components/Custom/ItemList/ItemList.jsx';
 import TextSearch from '../../../Components/Form/TextSearch/TextSearch.jsx';
 import ComboBox from '../../../Components/Form/ComboBox/ComboBox.jsx';
-import keys from '../../../../keys';
 
 import './Cobrar.css';
+
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+const cipher = require('src/lib/guard/cipher');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 const max = 178542, min = 413;
 class Cobrar extends Component {

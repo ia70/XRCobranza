@@ -11,11 +11,15 @@ import { TextNumber } from '../../../Components/Form/TextNumber/TextNumber.jsx';
 import { DateTimePicker } from '../../../Components/Form/DateTimePicker/DateTimePicker.jsx';
 import { BtnSubmit } from '../../../Components/Form/BtnSubmit/BtnSubmit.jsx';
 import TextBox from '../../../Components/Form/TextBox/TextBox.jsx';
-import keys from '../../../../keys';
 import { getDateTime } from '../../../../lib/util';
 
 import './SolicitarDinero.css';
 import Logo from '../../../img/Logo.png';
+
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+const cipher = require('src/lib/guard/cipher');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 class SolicitarDinero extends Component {
     constructor(props) {

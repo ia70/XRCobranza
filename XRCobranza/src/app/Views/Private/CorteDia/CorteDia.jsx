@@ -3,11 +3,14 @@ import { Redirect } from 'react-router-dom';
 
 //CONMPONENTS --------------------------------------------------
 import Navbar from '../../../Components/Content/Navbar/Navbar.jsx';
-import keys from '../../../../keys';
 
 import Logo from '../../../img/Logo.png';
 import { ItemPago } from '../../../Components/Custom/ItemPago/ItemPago.jsx';
 
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+const cipher = require('src/lib/guard/cipher');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 const max = 178542, min = 413;
 class CorteDia extends Component {

@@ -27,9 +27,10 @@ import imgNuevoCliente from '../../../img/NuevoUsuario.png';
 import imgSolicitarDinero from '../../../img/SolicitarDinero.png';
 import Logo from '../../../img/Logo.png';
 
-// SECURITY  --------------------------------
-const keys = require('../../../../keys');
-const cipher = require('../../../../cipher');
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+const cipher = require('src/lib/guard/cipher');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 // CSS
 import './Dashboard.css';

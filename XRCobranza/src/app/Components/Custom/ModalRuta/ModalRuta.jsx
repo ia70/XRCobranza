@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import keys from '../../../../keys';
 import Fecha from '../../../../lib/util.js';
 // COMPONENTES ----------------------------------------------------
 
-
-
 import './ModalRuta.css';
+
 /*PROPIEDADES -----------------------------------------------------
     1- numbre               Número de lista
     2- stateItem            Estado (1 Aprobado, 2 En espera, 3 Rechazado )

@@ -8,9 +8,10 @@ import { TextPassword } from '../../../Components/Form/TextPassword/TextPassword
 import { BtnSubmit } from '../../../Components/Form/BtnSubmit/BtnSubmit.jsx';
 import './Login.css';
 
-// SECURITY  --------------------------------
-const keys = require('../../../../keys');
-const cipher = require('../../../../cipher');
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+const cipher = require('src/lib/guard/cipher');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 //PROPIEDADES ------------------------------

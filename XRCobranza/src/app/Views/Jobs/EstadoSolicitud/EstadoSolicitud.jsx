@@ -5,10 +5,14 @@ import { Redirect } from 'react-router-dom';
 import Navbar from '../../../Components/Content/Navbar/Navbar.jsx';
 import { ItemList } from '../../../Components/Custom/ItemList/ItemList.jsx';
 import { Title } from '../../../Components/Content/Title/Title.jsx';
-import keys from '../../../../keys';
 
 import './EstadoSolicitud.css';
 import Logo from '../../../img/Logo.png';
+
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+const cipher = require('src/lib/guard/cipher');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 const max = 178542, min = 413;
 class EstadoSolicitud extends Component {

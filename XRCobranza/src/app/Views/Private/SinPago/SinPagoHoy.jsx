@@ -9,11 +9,14 @@ import { Title } from '../../../Components/Content/Title/Title.jsx';
 
 import TextSearch from '../../../Components/Form/TextSearch/TextSearch.jsx';
 import ComboBox from '../../../Components/Form/ComboBox/ComboBox.jsx';
-import keys from '../../../../keys';
 
 import Logo from '../../../img/Logo.png';
 import { ItemPago } from '../../../Components/Custom/ItemPago/ItemPago.jsx';
 
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+const cipher = require('src/lib/guard/cipher');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 const max = 178542, min = 413;
 class SinPagoHoy extends Component {

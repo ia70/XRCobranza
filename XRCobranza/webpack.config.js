@@ -1,13 +1,15 @@
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
-const { server } = require('./src/keys');
-//const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+
 const path = require('path');
+const keys = require(path.resolve('src/lib/guard', 'keys'));
+
+//const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   devServer: {
-    host: server.host,
-    port: server.port
+    host: keys.server.host,
+    port: keys.server.port
   },
   entry: './src/app/index.js',
   output: {
@@ -70,6 +72,15 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    modules: [
+        'node_modules',
+        path.resolve(__dirname + '/src')
+    ],
+    alias: {
+        src: path.resolve(__dirname + '/src')
+    }
+},
   plugins: [
     new htmlWebpackPlugin({
       template: './src/public/index.html',

@@ -13,11 +13,10 @@ import { getDateTime } from '../../../../lib/util';
 
 import Logo from '../../../img/Logo.png';
 
-
-// SECURITY  --------------------------------
-const keys = require('../../../../keys');
-const cipher = require('../../../../cipher');
-
+// SECURITY  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const keys = require('src/lib/guard/keys');
+const cipher = require('src/lib/guard/cipher');
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 class NuevoCliente extends Component {
 
