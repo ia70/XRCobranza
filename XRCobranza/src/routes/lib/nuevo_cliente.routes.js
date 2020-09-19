@@ -51,7 +51,7 @@ router.post('/', async (req, res) => {
         try {
             d_per = await pool.query('INSERT INTO persona SET ?', [persona]);
         } catch (error) {
-            console.log(error);
+            console.log(error.errno);
         }
 
         if (d_per.affectedRows > 0) {
