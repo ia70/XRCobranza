@@ -138,7 +138,7 @@ class NuevoCliente extends Component {
                                         usuario: (document.getElementById('p_ine').value != null ? document.getElementById('p_ine').value : null),
                                         password: "12345",
                                         id_persona: null,
-                                        usuario_padre: this.state._gl0obal.id_usuario,
+                                        usuario_padre: this.state._global.id_usuario,
                                         id_rol: 3,
                                         id_ruta: (document.getElementById('p_id_ruta').value != null ? document.getElementById('p_id_ruta').value : null),
                                         id_empresa: this.state._global.id_empresa,
