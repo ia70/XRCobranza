@@ -4,7 +4,8 @@ const router = express.Router();
 const { access } = require('../../lib/security');
 const { calcular_abono } = require('../../routes/functions/calcular_abono');
 
-const pool = require('../../database');
+const path = require('path');
+const pool = require(path.resolve('src/lib','database'));
 
 //->>>>>    AGREGAR     --------------------------------------------------------------------
 router.post('/', async (req, res) => {

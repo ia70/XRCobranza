@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const { server } = require('./keys');
+const { server } = require(path.resolve('src/lib/guard', 'keys'));
 
 // Initialization ------------------------------------------------ 
 const app = express();

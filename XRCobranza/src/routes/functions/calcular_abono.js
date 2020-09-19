@@ -1,4 +1,5 @@
-const pool = require('../../database');
+const path = require('path');
+const pool = require(path.resolve('src/lib','database'));
 
 async function calcular_abono(abono) {
     try {

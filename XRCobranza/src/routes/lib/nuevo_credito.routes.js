@@ -2,7 +2,9 @@
 const express = require('express');
 const router = express.Router();
 
-const pool = require('../../database');
+const path = require('path');
+const pool = require(path.resolve('src/lib','database'));
+
 const { access } = require('../../lib/security');
 const { calcular_abono } = require('../../routes/functions/calcular_abono');
 const { getDateTime } = require('../../lib/util');

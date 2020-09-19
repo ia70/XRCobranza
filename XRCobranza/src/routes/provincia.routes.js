@@ -2,7 +2,8 @@
 const express = require('express');
 const router = express.Router();
 
-const pool = require('../database');
+const path = require('path');
+const pool = require(path.resolve('src/lib','database'));
 const tabla = "provincia";
 const primary_key = "id_provincia";
 

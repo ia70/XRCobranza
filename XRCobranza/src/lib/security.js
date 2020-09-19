@@ -1,4 +1,4 @@
-const pool = require('../database');
+const pool = require('./database');
 const { getDateTime } = require('../lib/util');
 
 async function access(vhash, vuser) {

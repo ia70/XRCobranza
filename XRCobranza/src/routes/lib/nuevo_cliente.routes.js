@@ -3,16 +3,50 @@ const express = require('express');
 const router = express.Router();
 const { access } = require('../../lib/security');
 
-const pool = require('../../database');
+const path = require('path');
+const pool = require(path.resolve('src/lib','database'));
+
+// SECURITY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+const cipher = require(path.resolve('src/lib/guard', 'cipher'));
+const keys = require(path.resolve('src/lib/guard', 'keys'));
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 //->>>>>    AGREGAR     --------------------------------------------------------------------
 router.post('/', async (req, res) => {
+            
+    // SECURITY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    var _global = [];
+    try {
+        _global = cipher.decode(keys.security.client_password, req.body._global.data);
+        console.log(_global);
+        const login_sesion = await pool.query('CALL LOGIN_SESION(?)', [_global.hash]);
+        if (JSON.stringify(login_sesion) == '[]' || JSON.stringify(data) == "" || JSON.stringify(data) == null) {
+            res.status(400).send({
+                response: false,
+                session: false,
+                error: e
+            });
+        }
+    } catch (error) {
+        res.status(400).send({
+            response: false,
+            session: false,
+            error: e
+        });
+        console.log(error);
+    }
+
+    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     try {
         var persona = req.body.persona;
         var aval = req.body.aval;
         var usuario = req.body.usuario;
-        var _global = req.body._global.data;
-        
+
+
         var data_user = {
             id_usuario: null,
             id_sucursal: user.sucursal,
@@ -28,7 +62,7 @@ router.post('/', async (req, res) => {
 
             const d_per = await pool.query('INSERT INTO persona SET ?', [persona]);
             if (d_per.affectedRows > 0) {
-                if(aval.nombre != ""){
+                if (aval.nombre != "") {
                     let d_aval = await pool.query('INSERT INTO aval SET ?', [aval]);
                 }
                 let d_user = await pool.query('INSERT INTO usuario SET ?', [data_user]);

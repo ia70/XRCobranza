@@ -2,11 +2,12 @@
 const express = require('express');
 const router = express.Router();
 
-const pool = require('../database');
+const path = require('path');
+const pool = require(path.resolve('src/lib','database'));
 const tabla = "usuario";
 
-const cipher = require('../cipher.js');
-const keys = require('../keys');
+const cipher = require('../lib/Guard/cipher.js');
+const keys = require(path.resolve('src/lib/guard', 'keys'));
 const fecha = require('../lib/util').getDateTime;
 
 //->>>>>    LISTA         ------------------------------------------------------------------
@@ -38,10 +39,12 @@ router.post('/', async (req, res) => {
         } else {
             var id = fecha() + '_' + usr;
             var hash = cipher.encode(keys.security.client_password, id);
-            var sucu = (data[0][0].id_sucursal != null ? data[0][0].id_sucursal : 0);
+            var empresa = (data[0][0].id_empresa != null ? data[0][0].id_empresa : 0);
+            var sucursal = (data[0][0].id_sucursal != null ? data[0][0].id_sucursal : 0);
+            var usuario = (data[0][0].id_usuario != null ? data[0][0].id_usuario : 0);
 
             try {
-                login(hash, usr, sucu);
+                login(hash, empresa, sucursal, usuario);
             } catch (e) {
                 console.log(e);
             }
@@ -71,13 +74,13 @@ router.post('/', async (req, res) => {
     }
 });
 
-async function login(hash, user, sucu) {
-    let data = await pool.query('SELECT * FROM sesion WHERE usuario="' + user + '" AND id_estado=1');
+async function login(hash, empresa, sucursal, usuario) {
+    let data = await pool.query('SELECT * FROM sesion WHERE id_usuario=' + usuario + ' AND id_estado=1');
     if (JSON.stringify(data) != '[]') {
-        data = await pool.query('UPDATE sesion SET id_estado=2, sesion_fin="' + fecha() + '" WHERE usuario="' + user + '" AND id_estado=1');
+        data = await pool.query('UPDATE sesion SET id_estado=3, sesion_fin="' + fecha() + '" WHERE id_usuario=' + usuario + ' AND id_estado=1');
     }
     try {
-        data = await pool.query('INSERT INTO sesion VALUES("' + hash + '", "' + user + '", ' + sucu + ', "' + fecha() + '", "' + fecha() + '", null, 1)');
+        data = await pool.query('INSERT INTO sesion VALUES("' + hash + '", ' + empresa + ', ' + sucursal + ', ' + usuario + ', "' + fecha() + '", "' + fecha() + '", null, 1)');
     } catch (e) {
         console.log(e);
         return false;

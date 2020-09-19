@@ -2,7 +2,8 @@
 const mysql = require('mysql');
 const { promisify } = require('util');
 
-const { database } = require('./keys');
+const path = require('path');
+const { database } = require(path.resolve('src/lib/guard', 'keys'));
 
 const pool = mysql.createPool(database);
 
