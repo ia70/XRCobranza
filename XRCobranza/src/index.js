@@ -4,6 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { server } = require(path.resolve('src/lib/guard', 'keys'));
+const time = require(path.resolve('src/lib', 'util'));
 
 // Initialization ------------------------------------------------ 
 const app = express();
@@ -73,7 +74,9 @@ app.use(function (req, res) {
 
 // Starting the server -------------------------------------------
 app.listen(app.get('port'), () => {
-    console.log('Server on port ', app.get('port'));
+    console.log('\n\n\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+    console.log(time.getDateTime() + '\n');
+    console.log('SERVER ON PORT ', app.get('port'));
 });
 /*
     NO OLVIDAR CAMBIAR DEL WEBPACK DONDE SE SERVIRA EL SERVICIO. SI NO ES CORRECTA NO SE EJECUTARA!
