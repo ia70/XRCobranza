@@ -22,7 +22,7 @@ pool.getConnection((err, connection) => {
 
     if (connection) {
         connection.release();
-        console.log('DATABASE IS CONNECTED!');
+        console.log('DATABASE IS CONNECTED!\n');
     }
 
 
