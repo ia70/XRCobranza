@@ -9587,22 +9587,6 @@
         {
           "type": "table",
           "schemaName": "xrcobranza",
-          "tableName": "inventario",
-          "x": 2050,
-          "y": 750,
-          "width": 200,
-          "height": 160,
-          "isBold": false,
-          "titleColor": {
-            "r": 55,
-            "g": 131,
-            "b": 192,
-            "a": 1
-          }
-        },
-        {
-          "type": "table",
-          "schemaName": "xrcobranza",
           "tableName": "secuencia_cobro",
           "x": 1560,
           "y": 410,
@@ -9791,7 +9775,7 @@
           "x": 1780,
           "y": 40,
           "width": 490,
-          "height": 880,
+          "height": 770,
           "layerColor": {
             "r": 255,
             "g": 128,
@@ -11431,124 +11415,6 @@
             "x": 1994,
             "y": 522,
             "width": 51,
-            "height": 30,
-            "fontName": "Arial Unicode MS",
-            "fontSize": 14,
-            "fontColor": {
-              "r": 204,
-              "g": 204,
-              "b": 204,
-              "a": 1
-            },
-            "isFontBold": false,
-            "isFontItalic": false,
-            "isVisible": false
-          }
-        },
-        {
-          "name": "inv_sucu",
-          "sourceTableName": "inventario",
-          "sourceSchemaName": "xrcobranza",
-          "lineWidth": 1,
-          "visible": true,
-          "vertices": [
-            {
-              "x": 2034,
-              "y": 830
-            },
-            {
-              "x": 740,
-              "y": 830
-            },
-            {
-              "x": 740,
-              "y": 774
-            }
-          ],
-          "label": {
-            "x": 1980,
-            "y": 792,
-            "width": 65,
-            "height": 30,
-            "fontName": "Arial Unicode MS",
-            "fontSize": 14,
-            "fontColor": {
-              "r": 204,
-              "g": 204,
-              "b": 204,
-              "a": 1
-            },
-            "isFontBold": false,
-            "isFontItalic": false,
-            "isVisible": false
-          }
-        },
-        {
-          "name": "inv_art",
-          "sourceTableName": "inventario",
-          "sourceSchemaName": "xrcobranza",
-          "lineWidth": 1,
-          "visible": true,
-          "vertices": [
-            {
-              "x": 2150,
-              "y": 734
-            },
-            {
-              "x": 2150,
-              "y": 720
-            },
-            {
-              "x": 2150,
-              "y": 720
-            },
-            {
-              "x": 2150,
-              "y": 726
-            }
-          ],
-          "label": {
-            "x": 2158,
-            "y": 715,
-            "width": 52,
-            "height": 30,
-            "fontName": "Arial Unicode MS",
-            "fontSize": 14,
-            "fontColor": {
-              "r": 204,
-              "g": 204,
-              "b": 204,
-              "a": 1
-            },
-            "isFontBold": false,
-            "isFontItalic": false,
-            "isVisible": false
-          }
-        },
-        {
-          "name": "inv_est",
-          "sourceTableName": "inventario",
-          "sourceSchemaName": "xrcobranza",
-          "lineWidth": 1,
-          "visible": true,
-          "vertices": [
-            {
-              "x": 2034,
-              "y": 840
-            },
-            {
-              "x": 110,
-              "y": 840
-            },
-            {
-              "x": 110,
-              "y": 576
-            }
-          ],
-          "label": {
-            "x": 1992,
-            "y": 802,
-            "width": 53,
             "height": 30,
             "fontName": "Arial Unicode MS",
             "fontSize": 14,
