@@ -9,6 +9,7 @@ const pool = require(path.resolve('src/lib', 'database'));
 
 const cipher = require(path.resolve('src/lib/guard', 'cipher'));
 const keys = require(path.resolve('src/lib/guard', 'keys'));
+const session_verifier = require(path.resolve('src/lib/guard', 'session_verifier'));
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -17,27 +18,7 @@ router.post('/', async (req, res) => {
 
     // SECURITY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    var _global = [];
-
-    try {
-        _global = cipher.decode(keys.security.client_password, req.body._global.data);
-        const login_sesion = await pool.query('CALL LOGIN_SESION(?)', [_global.hash]);
-        if (JSON.stringify(login_sesion) == '[]' || JSON.stringify(login_sesion) == "" || JSON.stringify(login_sesion) == null) {
-            res.status(400).send({
-                response: false,
-                session: false,
-                _global: null
-            });
-        }
-    } catch (error) {
-        res.status(400).send({
-            response: false,
-            session: false,
-            _global: null,
-            error: error
-        });
-        console.log(error);
-    }
+    var _global = session_verifier(req.body._global);
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
