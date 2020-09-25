@@ -146,9 +146,7 @@ class NuevoCliente extends Component {
                                         id_estado: 1,
                                         fecha_reg: getDateTime()
                                     },
-                                    _global: {
-                                        data: (sessionStorage.getItem('oVlrXrrt') != null ? sessionStorage.getItem('oVlrXrrt') : [])
-                                    }
+                                    _global: (sessionStorage.getItem('oVlrXrrt') != null ? sessionStorage.getItem('oVlrXrrt') : [])
                                 };
                             } catch (error) {
                                 data_text = [];
