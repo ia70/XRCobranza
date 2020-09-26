@@ -21,64 +21,67 @@ router.post('/', async (req, res) => {
     var _global = session_verifier(req.body._global);
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-    try {
-        var persona = req.body.persona;
-        var aval = req.body.aval;
-        var usuario = req.body.usuario;
-        var persona_id = [];
-        var d_per = [];
+    if (_global != []) {
 
         try {
-            d_per = await pool.query('INSERT INTO persona SET ?', [persona]);
-        } catch (error) {
-            console.log(error.errno);
-        }
+            var persona = req.body.persona;
+            var aval = req.body.aval;
+            var usuario = req.body.usuario;
+            var persona_id = [];
+            var d_per = [];
 
-        if (d_per.affectedRows > 0) {
-            persona_id = await pool.query('SELECT id_persona FROM persona WHERE ine=?', [persona.ine]);
-            if (JSON.stringify(persona_id) == '[]' || JSON.stringify(persona_id) == "" || JSON.stringify(persona_id) == null) {
+            try {
+                d_per = await pool.query('INSERT INTO persona SET ?', [persona]);
+            } catch (error) {
+                console.log(error.errno);
+            }
+
+            if (d_per.affectedRows > 0) {
+                persona_id = await pool.query('SELECT id_persona FROM persona WHERE ine=?', [persona.ine]);
+                if (JSON.stringify(persona_id) == '[]' || JSON.stringify(persona_id) == "" || JSON.stringify(persona_id) == null) {
+                    res.status(400).send({
+                        response: false,
+                        session: true,
+                        _global: cipher.encode(keys.security.client_password, JSON.stringify(_global)),
+                        error: 'Registro no insertado!'
+                    });
+                } else {
+                    persona_id = persona_id[0].id_persona;
+
+                    if (aval.nombre != "") {
+                        aval.id_persona = persona_id;
+                        let d_aval = await pool.query('INSERT INTO aval SET ?', [aval]);
+                    }
+
+                    usuario.id_persona = persona_id;
+                    let d_user = await pool.query('INSERT INTO usuario SET ?', [usuario]);
+
+                    res.status(200).send({
+                        response: true,
+                        session: true,
+                        _global: cipher.encode(keys.security.client_password, JSON.stringify(_global))
+                    });
+                }
+            } else {
+
                 res.status(400).send({
                     response: false,
                     session: true,
                     _global: cipher.encode(keys.security.client_password, JSON.stringify(_global)),
                     error: 'Registro no insertado!'
                 });
-            } else {
-                persona_id = persona_id[0].id_persona;
 
-                if (aval.nombre != "") {
-                    aval.id_persona = persona_id;
-                    let d_aval = await pool.query('INSERT INTO aval SET ?', [aval]);
-                }
-
-                usuario.id_persona = persona_id;
-                let d_user = await pool.query('INSERT INTO usuario SET ?', [usuario]);
-
-                res.status(200).send({
-                    response: true,
-                    session: true,
-                    _global: cipher.encode(keys.security.client_password, JSON.stringify(_global))
-                });
             }
-        } else {
 
+        } catch (e) {
             res.status(400).send({
                 response: false,
                 session: true,
                 _global: cipher.encode(keys.security.client_password, JSON.stringify(_global)),
-                error: 'Registro no insertado!'
+                error: e
             });
-
         }
 
-    } catch (e) {
-        res.status(400).send({
-            response: false,
-            session: true,
-            _global: cipher.encode(keys.security.client_password, JSON.stringify(_global)),
-            error: e
-        });
     }
 });
 
