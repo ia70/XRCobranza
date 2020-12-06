@@ -1,6 +1,4 @@
 'use strict';
-module.exports = {
-    error: {
-        mostrar: true
-    }
+export const error = {
+    mostrar: true
 };
