@@ -1,9 +1,10 @@
-const pool = require('./database');
-const { getDateTime } = require('../lib/util');
+import { query } from './database';
+import { getDateTime } from '../lib/util';
 
+// VERIFICA SI EL HAST Y NOMBRE DE USUARIO SON VALIDOS. DE SER VALIDOS SE CONTINUA EJECUCION
 async function access(vhash, vuser) {
     try {
-        let data = await pool.query('UPDATE sesion SET ultima_conexion="' + getDateTime() + '" WHERE id_sesion="' + vhash + '" AND id_usuario="' + vuser + '" AND id_estado=1');
+        let data = query('UPDATE sesion SET ultima_conexion="' + getDateTime() + '" WHERE id_sesion="' + vhash + '" AND id_usuario="' + vuser + '" AND id_estado=1');
         if (data.affectedRows == 0) {
             return false;
         } else {
@@ -16,4 +17,4 @@ async function access(vhash, vuser) {
 
 }
 
-module.exports = { access };
+export default { access };

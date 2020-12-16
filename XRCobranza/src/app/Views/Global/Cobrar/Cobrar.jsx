@@ -25,11 +25,7 @@ class Cobrar extends Component {
         this._isUpdate = false;
 
         this.state = {
-            login: sessionStorage.getItem('login'),
-            user: sessionStorage.getItem('user'),
-            sucursal: sessionStorage.getItem('sucursal'),
-            hash: sessionStorage.getItem('hash'),
-            rol: sessionStorage.getItem('rol'),
+            _global: (sessionStorage.getItem('oVlrXrrt') != null ? JSON.parse(cipher.decode(keys.security.client_password, sessionStorage.getItem('oVlrXrrt'))) : []),
             pagado: 0,
             opcionCartera: 0,
             opcion: 5,

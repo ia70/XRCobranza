@@ -75,26 +75,6 @@ class Dashboard extends Component {
                     <BtnRounded id='14' src={imgCarteraClientes} url="/carteraclientes" label="Cartera de clientes" />
                     <BtnRounded id='15' src={imgCorteDia} url="/cortedia" label="Corte del dia" />
 
-                   {/* <Title title="SEGUIMIENTO" />
-                    <BtnRounded id='20' src={imgSolicitudes} url="/nuevocliente" label="Solicitudes" />
-                    <BtnRounded id='21' src={imgSinPagoHoy} url="/sinpagohoy" label="Adeudos" />
-                    <BtnRounded id='22' src={imgClientesMorosos} url="/nuevocliente" label="Clientes Morosos" />
-                    <BtnRounded id='23' src={imgRecuperacion} url="/nuevocliente" label="Recuperación" />
-                    
-
-                    <Title title="AVANZADO" />
-                    <BtnRounded id='30' src={imgSesiones} url="/nuevocliente" label="Adm. Sesiones" />
-                    
-                    <BtnRounded id='31' src={imgCreditos} url="/carteraclientes" label="Creditos" />
-                    <BtnRounded id='32' src={imgUsuarios} url="/carteraclientes" label="Usuarios" />
-                    <BtnRounded id='33' src={imgClientes} url="/carteraclientes" label="Clientes" />
-                    
-                    <BtnRounded id='34' src={imgRutas} url="/carteraclientes" label="Rutas" />
-                    <BtnRounded id='35' src={imgFinanzas} url="/carteraclientes" label="Finanzas" />
-                    
-                    <BtnRounded id='36' src={imgReportes} url="/carteraclientes" label="Reportes" />
-                */}
-
                 </div>
             } else if (this.state._global.id_rol == 4) {
                 this._menu = <div className="row">
@@ -132,8 +112,8 @@ class Dashboard extends Component {
                 </div>
             } else {
                 this._menu = <div className="row">
-                    <BtnRounded id='3' src={imgSolicitarDinero} url="/solicitardinero" label="Solicitar dinero" />
-                    <BtnRounded id='4' src={imgEstadoSolicitud} url="/estadosolicitud" label="Estado de solicitudes" />
+                    {/*<BtnRounded id='3' src={imgSolicitarDinero} url="/solicitardinero" label="Solicitar dinero" />
+                    <BtnRounded id='4' src={imgEstadoSolicitud} url="/estadosolicitud" label="Estado de solicitudes" />*/}
                 </div>
             }
         }

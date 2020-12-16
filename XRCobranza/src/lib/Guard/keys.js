@@ -7,7 +7,7 @@ module.exports = {
         database: 'xrcobranza'
     },
     server: {
-        host: '192.168.1.101',   //cdjcop.ddns.net
+        host: '192.168.1.100',   //cdjcop.ddns.net
         port: 80
     },
     security: {
