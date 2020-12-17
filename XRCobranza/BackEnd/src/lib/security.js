@@ -1,5 +1,5 @@
-import { query } from './database';
-import { getDateTime } from '../lib/util';
+const { query } = require('./database');
+const { getDateTime } = require('../lib/util');
 
 // VERIFICA SI EL HAST Y NOMBRE DE USUARIO SON VALIDOS. DE SER VALIDOS SE CONTINUA EJECUCION
 async function access(vhash, vuser) {
@@ -17,4 +17,4 @@ async function access(vhash, vuser) {
 
 }
 
-export default { access };
+module.export = { access };
