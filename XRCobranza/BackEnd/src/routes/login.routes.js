@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 const path = require('path');
-const pool = require(path.resolve('src/lib','database'));
+const pool = require(path.resolve('src/lib', 'database'));
 const tabla = "usuario";
 
 const cipher = require('../lib/Guard/cipher.js');
@@ -12,6 +12,15 @@ const fecha = require('../lib/util').getDateTime;
 
 //->>>>>    LISTA         ------------------------------------------------------------------
 router.post('/', async (req, res) => {
+
+    console.log(req.headers['user-agent'], "\n");
+    console.log(req._remoteAddress);
+
+    
+
+
+
+
 
     var usr = cipher.decode(keys.security.client_password, req.body.usr);
     var pwd = cipher.decode(keys.security.client_password, req.body.pwd);
@@ -72,6 +81,10 @@ router.post('/', async (req, res) => {
             oVlrXrrt: cipher.encode(keys.security.client_password, JSON.stringify(_global))
         });
     }
+
+    res.status(200).send({
+        "res": true
+    });
 });
 
 async function login(hash, empresa, sucursal, usuario) {
