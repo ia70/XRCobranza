@@ -76,7 +76,7 @@ app.use(function (req, res) {
 app.listen(app.get('port'), () => {
     console.log('\n\n\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
     console.log(time.getDateTime() + '\n');
-    console.log('SERVER ON PORT ', app.get('port'));
+    console.log('SERVER ON PORT ', app.get('port'), '\n');
 });
 /*
     NO OLVIDAR CAMBIAR DEL WEBPACK DONDE SE SERVIRA EL SERVICIO. SI NO ES CORRECTA NO SE EJECUTARA!
