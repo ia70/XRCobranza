@@ -1,19 +1,15 @@
 {
-  "name": "xrcobranza",
+  "name": "iacobranza",
   "version": "1.0.0",
   "description": "Aplicación para la gestión de cobro",
-  "main": "webpack.config.js",
   "scripts": {
     "start": "node src/",
-    "nodemon": "nodemon src/",
-    "dev": "webpack-dev-server --open --hot --mode development",
-    "devs": "concurrently 'nodemon src/' 'webpack-dev-server --open --hot --mode development'",
-    "build": "webpack --mode production --progress"
+    "dev": "nodemon src/"
   },
   "keywords": [
     "Cobranza"
   ],
-  "author": "xcoru.com",
+  "author": "ia70.com",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -25,27 +21,6 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/polyfill": "^7.6.0",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "react-router-dom": "^5.1.2",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.2.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.0",
-    "nodemon": "^2.0.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0",
-    "url-loader": "^3.0.0",
-    "webpack": "^4.41.1",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2",
-    "webpack-livereload-plugin": "^2.2.0"
+    "nodemon": "^2.0.2"
   }
 }
