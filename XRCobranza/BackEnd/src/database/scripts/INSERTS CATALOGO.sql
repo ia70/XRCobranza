@@ -16,10 +16,10 @@ INSERT INTO moneda VALUES(DEFAULT, "USD", "Dolar Estadonidense");
 
 -- ROL ----------------------------------------------------------
 
-INSERT INTO rol VALUES(DEFAULT, "Administrador");
-INSERT INTO rol VALUES(DEFAULT, "Cobrador");
-INSERT INTO rol VALUES(DEFAULT, "Cliente");
-INSERT INTO rol VALUES(DEFAULT, "Master");
+INSERT INTO rol VALUES(DEFAULT, 1, "Administrador");
+INSERT INTO rol VALUES(DEFAULT, 1, "Cobrador");
+INSERT INTO rol VALUES(DEFAULT, 1, "Cliente");
+INSERT INTO rol VALUES(DEFAULT, 1, "Master");
 
 
 
