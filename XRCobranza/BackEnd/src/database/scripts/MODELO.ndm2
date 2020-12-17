@@ -8,7 +8,7 @@
     "isPortriat": true
   },
   "modelVersion": 2.01,
-  "defaultSchema": "xrcobranza",
+  "defaultSchema": "iacobranza",
   "server": {
     "objectType": "Server_MYSQL",
     "name": "Default",
@@ -18,7 +18,7 @@
     "schemas": [
       {
         "objectType": "Schema_MYSQL",
-        "name": "xrcobranza",
+        "name": "iacobranza",
         "tables": [
           {
             "objectType": "Table_MYSQL",
@@ -251,7 +251,7 @@
                 "fields": [
                   "id_sucursal"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "sucursal",
                 "referenceFields": [
                   "id_sucursal"
@@ -419,7 +419,7 @@
                 "fields": [
                   "id_rol"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "rol",
                 "referenceFields": [
                   "id_rol"
@@ -436,7 +436,7 @@
                 "fields": [
                   "id_permiso"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "permiso",
                 "referenceFields": [
                   "id_permiso"
@@ -1824,7 +1824,7 @@
                 "fields": [
                   "id_tipo_capital"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_capital",
                 "referenceFields": [
                   "id_tipo_capital"
@@ -1992,7 +1992,7 @@
                 "fields": [
                   "ine"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "persona",
                 "referenceFields": [
                   "ine"
@@ -2009,7 +2009,7 @@
                 "fields": [
                   "id_ruta"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "ruta",
                 "referenceFields": [
                   "id_ruta"
@@ -2327,7 +2327,7 @@
                 "fields": [
                   "id_sucursal"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "sucursal",
                 "referenceFields": [
                   "id_sucursal"
@@ -2344,7 +2344,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -2590,7 +2590,7 @@
                 "fields": [
                   "id_sucursal"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "sucursal",
                 "referenceFields": [
                   "id_sucursal"
@@ -2607,7 +2607,7 @@
                 "fields": [
                   "id_articulo"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "articulo",
                 "referenceFields": [
                   "id_articulo"
@@ -2624,7 +2624,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -2974,7 +2974,7 @@
                 "fields": [
                   "id_sucursal"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "sucursal",
                 "referenceFields": [
                   "id_sucursal"
@@ -2991,7 +2991,7 @@
                 "fields": [
                   "id_usuario"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "usuario",
                 "referenceFields": [
                   "id_usuario"
@@ -3008,7 +3008,7 @@
                 "fields": [
                   "ine"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "persona",
                 "referenceFields": [
                   "ine"
@@ -3025,7 +3025,7 @@
                 "fields": [
                   "id_tipo_cobro"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_cobro",
                 "referenceFields": [
                   "id_tipo_cobro"
@@ -3042,7 +3042,7 @@
                 "fields": [
                   "id_estado_solicitud"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado_solicitud",
                 "referenceFields": [
                   "id_estado_solicitud"
@@ -3059,7 +3059,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -3253,7 +3253,7 @@
                 "fields": [
                   "folio"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "credito",
                 "referenceFields": [
                   "folio"
@@ -3270,7 +3270,7 @@
                 "fields": [
                   "id_articulo"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "articulo",
                 "referenceFields": [
                   "id_articulo"
@@ -3724,7 +3724,7 @@
                 "fields": [
                   "id_sucursal"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "sucursal",
                 "referenceFields": [
                   "id_sucursal"
@@ -3741,7 +3741,7 @@
                 "fields": [
                   "id_periodo"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "periodo",
                 "referenceFields": [
                   "id_periodo"
@@ -3758,7 +3758,7 @@
                 "fields": [
                   "id_usuario"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "usuario",
                 "referenceFields": [
                   "id_usuario"
@@ -3775,7 +3775,7 @@
                 "fields": [
                   "id_tipo_capital"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_capital",
                 "referenceFields": [
                   "id_tipo_capital"
@@ -3792,7 +3792,7 @@
                 "fields": [
                   "id_tipo_concepto"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_concepto",
                 "referenceFields": [
                   "id_tipo_concepto"
@@ -3809,7 +3809,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -3826,7 +3826,7 @@
                 "fields": [
                   "id_media"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "media",
                 "referenceFields": [
                   "id_media"
@@ -4326,7 +4326,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -4343,7 +4343,7 @@
                 "fields": [
                   "id_zona_horaria"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "zona_horaria",
                 "referenceFields": [
                   "id_zona_horaria"
@@ -4360,7 +4360,7 @@
                 "fields": [
                   "id_moneda"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "moneda",
                 "referenceFields": [
                   "id_moneda"
@@ -4377,7 +4377,7 @@
                 "fields": [
                   "id_empresa"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "empresa",
                 "referenceFields": [
                   "id_empresa"
@@ -4883,7 +4883,7 @@
                 "fields": [
                   "id_usuario"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "usuario",
                 "referenceFields": [
                   "id_usuario"
@@ -4900,7 +4900,7 @@
                 "fields": [
                   "id_tipo_cobro"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_cobro",
                 "referenceFields": [
                   "id_tipo_cobro"
@@ -4917,7 +4917,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -4934,7 +4934,7 @@
                 "fields": [
                   "id_tipo_credito"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_credito",
                 "referenceFields": [
                   "id_tipo_credito"
@@ -5317,7 +5317,7 @@
                 "fields": [
                   "id_empresa"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "empresa",
                 "referenceFields": [
                   "id_empresa"
@@ -5334,7 +5334,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -5684,7 +5684,7 @@
                 "fields": [
                   "id_tipo_media"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_media",
                 "referenceFields": [
                   "id_tipo_media"
@@ -5701,7 +5701,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -6102,7 +6102,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -6706,7 +6706,7 @@
                 "fields": [
                   "id_tipo_inmueble"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_inmueble",
                 "referenceFields": [
                   "id_tipo_inmueble"
@@ -6723,7 +6723,7 @@
                 "fields": [
                   "id_media"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "media",
                 "referenceFields": [
                   "id_tipo_media"
@@ -6740,7 +6740,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -7167,7 +7167,7 @@
                 "fields": [
                   "id_persona"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "persona",
                 "referenceFields": [
                   "id_persona"
@@ -7184,7 +7184,7 @@
                 "fields": [
                   "id_rol"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "rol",
                 "referenceFields": [
                   "id_rol"
@@ -7201,7 +7201,7 @@
                 "fields": [
                   "id_ruta"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "ruta",
                 "referenceFields": [
                   "id_ruta"
@@ -7218,7 +7218,7 @@
                 "fields": [
                   "id_empresa"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "empresa",
                 "referenceFields": [
                   "id_empresa"
@@ -7235,7 +7235,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -7252,7 +7252,7 @@
                 "fields": [
                   "id_sucursal"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "sucursal",
                 "referenceFields": [
                   "id_sucursal"
@@ -7550,7 +7550,7 @@
                 "fields": [
                   "id_empresa"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "empresa",
                 "referenceFields": [
                   "id_empresa"
@@ -7567,7 +7567,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -7917,7 +7917,7 @@
                 "fields": [
                   "folio"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "credito",
                 "referenceFields": [
                   "folio"
@@ -7934,7 +7934,7 @@
                 "fields": [
                   "id_tipo_pago"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_pago",
                 "referenceFields": [
                   "id_tipo_pago"
@@ -7951,7 +7951,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -7968,7 +7968,7 @@
                 "fields": [
                   "id_usuario"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "usuario",
                 "referenceFields": [
                   "id_usuario"
@@ -8344,7 +8344,7 @@
                 "fields": [
                   "ine"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "persona",
                 "referenceFields": [
                   "ine"
@@ -8361,7 +8361,7 @@
                 "fields": [
                   "id_tipo_parentesco"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "tipo_parentesco",
                 "referenceFields": [
                   "id_tipo_perentesco"
@@ -8373,6 +8373,350 @@
                 "oldName": ""
               }
             ],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "permiso",
+            "comment": "",
+            "engine": "",
+            "characterSet": "",
+            "collation": "",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 0,
+            "indexLength": 0,
+            "maxDataLength": 0,
+            "rows": 0,
+            "updateTime": "",
+            "DDL": "",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_permiso",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": true,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_permiso"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "descripcion",
+                "type": "varchar",
+                "length": 200,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "descripcion"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "url_ruta",
+                "type": "varchar",
+                "length": 200,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "url_ruta"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "url_image",
+                "type": "varchar",
+                "length": 200,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "url_image"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_permiso",
+                  "keyLength": -2147483648,
+                  "order": "",
+                  "oldName": ""
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "",
+              "comment": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_MYSQL",
+                "name": "perm_est",
+                "fields": [
+                  "id_estado"
+                ],
+                "referenceSchema": "iacobranza",
+                "referenceTable": "estado",
+                "referenceFields": [
+                  "id_estado"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              }
+            ],
+            "triggers": [],
+            "tablePartitions": []
+          },
+          {
+            "objectType": "Table_MYSQL",
+            "name": "rol",
+            "comment": "",
+            "engine": "",
+            "characterSet": "",
+            "collation": "",
+            "autoIncrement": 0,
+            "tablespace": "",
+            "storage": "",
+            "insertMethod": "",
+            "connection": "",
+            "checksum": false,
+            "rowFormat": "",
+            "avgRowLength": 0,
+            "maxRows": 0,
+            "minRows": 0,
+            "keyBlockSize": 0,
+            "packKeys": "",
+            "delayKeyWrite": false,
+            "dataDirectory": "",
+            "indexDirectory": "",
+            "statsAutoRecalc": "",
+            "statsPersistent": "",
+            "statsSamplePages": 0,
+            "union": "",
+            "pageCheckSum": false,
+            "transactional": false,
+            "compression": "",
+            "oldName": "",
+            "encryption": false,
+            "createOptions": "",
+            "createTime": "",
+            "checkTime": "",
+            "dataFree": 0,
+            "dataLength": 0,
+            "indexLength": 0,
+            "maxDataLength": 0,
+            "rows": 0,
+            "updateTime": "",
+            "DDL": "",
+            "partitionBy": "",
+            "partitionByExpr": "",
+            "partitions": 0,
+            "partitionKeyAlgorithm": "",
+            "subPartitionBy": "",
+            "subPartitionByExpr": "",
+            "subPartitions": 0,
+            "subPartitionKeyAlgorithm": "",
+            "fields": [
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_rol",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": true,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_rol"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "id_empresa",
+                "type": "int",
+                "length": -2147483648,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "0",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "id_empresa"
+              },
+              {
+                "objectType": "TableField_MYSQL",
+                "name": "descripcion",
+                "type": "varchar",
+                "length": 50,
+                "decimals": -2147483648,
+                "isUnsigned": false,
+                "isZeroFill": false,
+                "setEnumValues": "",
+                "isBinary": false,
+                "charset": "",
+                "collation": "",
+                "isNullable": true,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "isOnUpdateCurrentTimestamp": false,
+                "isAutoInc": false,
+                "comment": "",
+                "columnFormat": "",
+                "storage": "",
+                "isVirtual": false,
+                "isGeneratedAlways": false,
+                "virtualExpr": "",
+                "virtualType": "",
+                "oldName": "descripcion"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_MYSQL",
+              "name": "",
+              "fields": [
+                {
+                  "objectType": "IndexField_MYSQL",
+                  "name": "id_rol",
+                  "keyLength": 0,
+                  "order": "",
+                  "oldName": ""
+                }
+              ],
+              "oldName": "",
+              "indexMethod": "",
+              "comment": ""
+            },
+            "foreignKeys": [],
             "triggers": [],
             "tablePartitions": []
           },
@@ -8654,7 +8998,7 @@
                 "fields": [
                   {
                     "objectType": "IndexField_MYSQL",
-                    "name": "usuario",
+                    "name": "id_usuario",
                     "keyLength": 0,
                     "order": "",
                     "oldName": ""
@@ -8704,7 +9048,7 @@
                 "fields": [
                   {
                     "objectType": "IndexField_MYSQL",
-                    "name": "id_susursal",
+                    "name": "id_sucursal",
                     "keyLength": 0,
                     "order": "",
                     "oldName": ""
@@ -8735,7 +9079,7 @@
                 "fields": [
                   "id_usuario"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "usuario",
                 "referenceFields": [
                   "id_usuario"
@@ -8752,7 +9096,7 @@
                 "fields": [
                   "id_estado"
                 ],
-                "referenceSchema": "xrcobranza",
+                "referenceSchema": "iacobranza",
                 "referenceTable": "estado",
                 "referenceFields": [
                   "id_estado"
@@ -8764,405 +9108,6 @@
                 "oldName": ""
               }
             ],
-            "triggers": [],
-            "tablePartitions": []
-          },
-          {
-            "objectType": "Table_MYSQL",
-            "name": "table_1",
-            "comment": "",
-            "engine": "",
-            "characterSet": "",
-            "collation": "",
-            "autoIncrement": 0,
-            "tablespace": "",
-            "storage": "",
-            "insertMethod": "",
-            "connection": "",
-            "checksum": false,
-            "rowFormat": "",
-            "avgRowLength": 0,
-            "maxRows": 0,
-            "minRows": 0,
-            "keyBlockSize": 0,
-            "packKeys": "",
-            "delayKeyWrite": false,
-            "dataDirectory": "",
-            "indexDirectory": "",
-            "statsAutoRecalc": "",
-            "statsPersistent": "",
-            "statsSamplePages": 0,
-            "union": "",
-            "pageCheckSum": false,
-            "transactional": false,
-            "compression": "",
-            "oldName": "",
-            "encryption": false,
-            "createOptions": "",
-            "createTime": "",
-            "checkTime": "",
-            "dataFree": 0,
-            "dataLength": 0,
-            "indexLength": 0,
-            "maxDataLength": 0,
-            "rows": 0,
-            "updateTime": "",
-            "DDL": "",
-            "partitionBy": "",
-            "partitionByExpr": "",
-            "partitions": 0,
-            "partitionKeyAlgorithm": "",
-            "subPartitionBy": "",
-            "subPartitionByExpr": "",
-            "subPartitions": 0,
-            "subPartitionKeyAlgorithm": "",
-            "fields": [],
-            "indexes": [],
-            "foreignKeys": [],
-            "triggers": [],
-            "tablePartitions": []
-          },
-          {
-            "objectType": "Table_MYSQL",
-            "name": "permiso",
-            "comment": "",
-            "engine": "",
-            "characterSet": "",
-            "collation": "",
-            "autoIncrement": 0,
-            "tablespace": "",
-            "storage": "",
-            "insertMethod": "",
-            "connection": "",
-            "checksum": false,
-            "rowFormat": "",
-            "avgRowLength": 0,
-            "maxRows": 0,
-            "minRows": 0,
-            "keyBlockSize": 0,
-            "packKeys": "",
-            "delayKeyWrite": false,
-            "dataDirectory": "",
-            "indexDirectory": "",
-            "statsAutoRecalc": "",
-            "statsPersistent": "",
-            "statsSamplePages": 0,
-            "union": "",
-            "pageCheckSum": false,
-            "transactional": false,
-            "compression": "",
-            "oldName": "",
-            "encryption": false,
-            "createOptions": "",
-            "createTime": "",
-            "checkTime": "",
-            "dataFree": 0,
-            "dataLength": 0,
-            "indexLength": 0,
-            "maxDataLength": 0,
-            "rows": 0,
-            "updateTime": "",
-            "DDL": "",
-            "partitionBy": "",
-            "partitionByExpr": "",
-            "partitions": 0,
-            "partitionKeyAlgorithm": "",
-            "subPartitionBy": "",
-            "subPartitionByExpr": "",
-            "subPartitions": 0,
-            "subPartitionKeyAlgorithm": "",
-            "fields": [
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_permiso",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": false,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": true,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_permiso"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "descripcion",
-                "type": "varchar",
-                "length": 200,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "descripcion"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "url_ruta",
-                "type": "varchar",
-                "length": 200,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "url_ruta"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "url_image",
-                "type": "varchar",
-                "length": 200,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "url_image"
-              }
-            ],
-            "indexes": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_MYSQL",
-              "name": "",
-              "fields": [
-                {
-                  "objectType": "IndexField_MYSQL",
-                  "name": "id_permiso",
-                  "keyLength": -2147483648,
-                  "order": "",
-                  "oldName": ""
-                }
-              ],
-              "oldName": "",
-              "indexMethod": "",
-              "comment": ""
-            },
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_MYSQL",
-                "name": "perm_est",
-                "fields": [
-                  "id_estado"
-                ],
-                "referenceSchema": "xrcobranza",
-                "referenceTable": "estado",
-                "referenceFields": [
-                  "id_estado"
-                ],
-                "onDelete": "",
-                "onUpdate": "",
-                "sourceCardinality": "OneAndOnlyOneRelationship",
-                "targetCardinality": "OneAndOnlyOneRelationship",
-                "oldName": ""
-              }
-            ],
-            "triggers": [],
-            "tablePartitions": []
-          },
-          {
-            "objectType": "Table_MYSQL",
-            "name": "rol",
-            "comment": "",
-            "engine": "",
-            "characterSet": "",
-            "collation": "",
-            "autoIncrement": 0,
-            "tablespace": "",
-            "storage": "",
-            "insertMethod": "",
-            "connection": "",
-            "checksum": false,
-            "rowFormat": "",
-            "avgRowLength": 0,
-            "maxRows": 0,
-            "minRows": 0,
-            "keyBlockSize": 0,
-            "packKeys": "",
-            "delayKeyWrite": false,
-            "dataDirectory": "",
-            "indexDirectory": "",
-            "statsAutoRecalc": "",
-            "statsPersistent": "",
-            "statsSamplePages": 0,
-            "union": "",
-            "pageCheckSum": false,
-            "transactional": false,
-            "compression": "",
-            "oldName": "",
-            "encryption": false,
-            "createOptions": "",
-            "createTime": "",
-            "checkTime": "",
-            "dataFree": 0,
-            "dataLength": 0,
-            "indexLength": 0,
-            "maxDataLength": 0,
-            "rows": 0,
-            "updateTime": "",
-            "DDL": "",
-            "partitionBy": "",
-            "partitionByExpr": "",
-            "partitions": 0,
-            "partitionKeyAlgorithm": "",
-            "subPartitionBy": "",
-            "subPartitionByExpr": "",
-            "subPartitions": 0,
-            "subPartitionKeyAlgorithm": "",
-            "fields": [
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_rol",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": false,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": true,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_rol"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "id_empresa",
-                "type": "int",
-                "length": -2147483648,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "0",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "id_empresa"
-              },
-              {
-                "objectType": "TableField_MYSQL",
-                "name": "descripcion",
-                "type": "varchar",
-                "length": 50,
-                "decimals": -2147483648,
-                "isUnsigned": false,
-                "isZeroFill": false,
-                "setEnumValues": "",
-                "isBinary": false,
-                "charset": "",
-                "collation": "",
-                "isNullable": true,
-                "defaultType": "Others",
-                "defaultValue": "",
-                "isOnUpdateCurrentTimestamp": false,
-                "isAutoInc": false,
-                "comment": "",
-                "columnFormat": "",
-                "storage": "",
-                "isVirtual": false,
-                "isGeneratedAlways": false,
-                "virtualExpr": "",
-                "virtualType": "",
-                "oldName": "descripcion"
-              }
-            ],
-            "indexes": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_MYSQL",
-              "name": "",
-              "fields": [
-                {
-                  "objectType": "IndexField_MYSQL",
-                  "name": "id_rol",
-                  "keyLength": 0,
-                  "order": "",
-                  "oldName": ""
-                }
-              ],
-              "oldName": "",
-              "indexMethod": "",
-              "comment": ""
-            },
-            "foreignKeys": [],
             "triggers": [],
             "tablePartitions": []
           }
@@ -9173,7 +9118,7 @@
   },
   "diagrams": [
     {
-      "name": "XRCobranza",
+      "name": "iaCobranza",
       "paperWidth": 4,
       "paperHeight": 3,
       "tableFont": "Arial Unicode MS",
@@ -9187,7 +9132,7 @@
       "shapes": [
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "empresa",
           "x": 900,
           "y": 782,
@@ -9203,7 +9148,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "configuracion",
           "x": 1270,
           "y": 90,
@@ -9219,7 +9164,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "sucursal",
           "x": 640,
           "y": 790,
@@ -9235,7 +9180,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "periodo",
           "x": 660,
           "y": 1080,
@@ -9251,7 +9196,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "rol",
           "x": 340,
           "y": 90,
@@ -9267,7 +9212,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "rol_permiso",
           "x": 90,
           "y": 100,
@@ -9283,7 +9228,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "permiso",
           "x": 90,
           "y": 260,
@@ -9299,7 +9244,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "estado",
           "x": 90,
           "y": 470,
@@ -9315,7 +9260,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "ruta",
           "x": 100,
           "y": 630,
@@ -9331,7 +9276,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "tipo_inmueble",
           "x": 90,
           "y": 1170,
@@ -9347,7 +9292,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "tipo_cobro",
           "x": 90,
           "y": 920,
@@ -9363,7 +9308,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "tipo_pago",
           "x": 350,
           "y": 1160,
@@ -9379,7 +9324,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "tipo_credito",
           "x": 350,
           "y": 920,
@@ -9395,7 +9340,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "tipo_capital",
           "x": 350,
           "y": 1020,
@@ -9411,7 +9356,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "tipo_concepto",
           "x": 90,
           "y": 1040,
@@ -9427,7 +9372,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "zona_horaria",
           "x": 1520,
           "y": 100,
@@ -9443,7 +9388,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "moneda",
           "x": 1560,
           "y": 260,
@@ -9459,7 +9404,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "persona",
           "x": 630,
           "y": 50,
@@ -9475,7 +9420,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "media",
           "x": 890,
           "y": 107,
@@ -9491,7 +9436,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "tipo_media",
           "x": 90,
           "y": 820,
@@ -9507,7 +9452,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "aval",
           "x": 890,
           "y": 360,
@@ -9523,7 +9468,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "tipo_parentesco",
           "x": 350,
           "y": 820,
@@ -9539,7 +9484,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "usuario",
           "x": 640,
           "y": 450,
@@ -9555,7 +9500,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "sesion",
           "x": 1270,
           "y": 320,
@@ -9571,7 +9516,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "solicitud",
           "x": 340,
           "y": 470,
@@ -9587,7 +9532,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "abono",
           "x": 2060,
           "y": 60,
@@ -9603,7 +9548,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "credito",
           "x": 1800,
           "y": 60,
@@ -9619,7 +9564,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "capital",
           "x": 1800,
           "y": 460,
@@ -9635,7 +9580,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "venta",
           "x": 2050,
           "y": 320,
@@ -9651,7 +9596,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "articulo",
           "x": 2050,
           "y": 470,
@@ -9667,7 +9612,7 @@
         },
         {
           "type": "table",
-          "schemaName": "xrcobranza",
+          "schemaName": "iacobranza",
           "tableName": "secuencia_cobro",
           "x": 1560,
           "y": 410,
@@ -9877,7 +9822,7 @@
         {
           "name": "sucu_empr",
           "sourceTableName": "sucursal",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -9911,7 +9856,7 @@
         {
           "name": "peri_sucu",
           "sourceTableName": "periodo",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -9953,7 +9898,7 @@
         {
           "name": "rol_per_rol",
           "sourceTableName": "rol_permiso",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -9987,7 +9932,7 @@
         {
           "name": "rol_per_rol_per",
           "sourceTableName": "rol_permiso",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10021,7 +9966,7 @@
         {
           "name": "conf_est",
           "sourceTableName": "configuracion",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10063,7 +10008,7 @@
         {
           "name": "sucu_est",
           "sourceTableName": "sucursal",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10105,7 +10050,7 @@
         {
           "name": "empr_est",
           "sourceTableName": "empresa",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10143,7 +10088,7 @@
         {
           "name": "perm_est",
           "sourceTableName": "permiso",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10177,7 +10122,7 @@
         {
           "name": "ruta_sucu",
           "sourceTableName": "ruta",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10219,7 +10164,7 @@
         {
           "name": "ruta_est",
           "sourceTableName": "ruta",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10253,7 +10198,7 @@
         {
           "name": "tip_conc_tip_cap",
           "sourceTableName": "tipo_concepto",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10287,7 +10232,7 @@
         {
           "name": "media_tip_med",
           "sourceTableName": "media",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10321,7 +10266,7 @@
         {
           "name": "media_est",
           "sourceTableName": "media",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10359,7 +10304,7 @@
         {
           "name": "capi_sucu",
           "sourceTableName": "capital",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10397,7 +10342,7 @@
         {
           "name": "capi_peri",
           "sourceTableName": "capital",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10439,7 +10384,7 @@
         {
           "name": "capi_usu",
           "sourceTableName": "capital",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10481,7 +10426,7 @@
         {
           "name": "capi_tcap",
           "sourceTableName": "capital",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10523,7 +10468,7 @@
         {
           "name": "capi_tcon",
           "sourceTableName": "capital",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10565,7 +10510,7 @@
         {
           "name": "cred_usu",
           "sourceTableName": "credito",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10603,7 +10548,7 @@
         {
           "name": "cred_tcob",
           "sourceTableName": "credito",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10641,7 +10586,7 @@
         {
           "name": "capi_est",
           "sourceTableName": "capital",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10679,7 +10624,7 @@
         {
           "name": "capi_med",
           "sourceTableName": "capital",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10721,7 +10666,7 @@
         {
           "name": "cred_est",
           "sourceTableName": "credito",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10759,7 +10704,7 @@
         {
           "name": "cred_tcre",
           "sourceTableName": "credito",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10801,7 +10746,7 @@
         {
           "name": "abon_foli",
           "sourceTableName": "abono",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10843,7 +10788,7 @@
         {
           "name": "abon_tpag",
           "sourceTableName": "abono",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10881,7 +10826,7 @@
         {
           "name": "abon_est",
           "sourceTableName": "abono",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10919,7 +10864,7 @@
         {
           "name": "soli_suc",
           "sourceTableName": "solicitud",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -10961,7 +10906,7 @@
         {
           "name": "soli_usu",
           "sourceTableName": "solicitud",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11003,7 +10948,7 @@
         {
           "name": "soli_ine",
           "sourceTableName": "solicitud",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11045,7 +10990,7 @@
         {
           "name": "soli_tcob",
           "sourceTableName": "solicitud",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11079,7 +11024,7 @@
         {
           "name": "soli_est",
           "sourceTableName": "solicitud",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11113,7 +11058,7 @@
         {
           "name": "aval_ine",
           "sourceTableName": "aval",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11155,7 +11100,7 @@
         {
           "name": "aval_tparen",
           "sourceTableName": "aval",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11193,7 +11138,7 @@
         {
           "name": "conf_zona",
           "sourceTableName": "configuracion",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11235,7 +11180,7 @@
         {
           "name": "conf_mone",
           "sourceTableName": "configuracion",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11273,7 +11218,7 @@
         {
           "name": "sesi_usua",
           "sourceTableName": "sesion",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11311,7 +11256,7 @@
         {
           "name": "sesi_est",
           "sourceTableName": "sesion",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11349,7 +11294,7 @@
         {
           "name": "venta_folio",
           "sourceTableName": "venta",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11391,7 +11336,7 @@
         {
           "name": "venta_art",
           "sourceTableName": "venta",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11433,7 +11378,7 @@
         {
           "name": "art_empr",
           "sourceTableName": "articulo",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11471,7 +11416,7 @@
         {
           "name": "art_est",
           "sourceTableName": "articulo",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11513,7 +11458,7 @@
         {
           "name": "conf_emp",
           "sourceTableName": "configuracion",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11551,7 +11496,7 @@
         {
           "name": "usu_per",
           "sourceTableName": "usuario",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11593,7 +11538,7 @@
         {
           "name": "usu_rol",
           "sourceTableName": "usuario",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11631,7 +11576,7 @@
         {
           "name": "usu_ruta",
           "sourceTableName": "usuario",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11669,7 +11614,7 @@
         {
           "name": "usu_empr",
           "sourceTableName": "usuario",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11707,7 +11652,7 @@
         {
           "name": "usu_est",
           "sourceTableName": "usuario",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11745,7 +11690,7 @@
         {
           "name": "per_inmu",
           "sourceTableName": "persona",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11783,7 +11728,7 @@
         {
           "name": "per_med",
           "sourceTableName": "persona",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11825,7 +11770,7 @@
         {
           "name": "per_est",
           "sourceTableName": "persona",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11863,7 +11808,7 @@
         {
           "name": "usu_sucu",
           "sourceTableName": "usuario",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
@@ -11905,7 +11850,7 @@
         {
           "name": "abon_usu",
           "sourceTableName": "abono",
-          "sourceSchemaName": "xrcobranza",
+          "sourceSchemaName": "iacobranza",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
